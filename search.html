@@ -473,10 +473,10 @@ font-size: 0.8vw;
             var kword =document.getElementById("key-word").value;
             if (kword){
                 document.getElementById("checkobox1").style.display='block'
-                document.getElementById('click_shu1').style.right='6.8vw'
+                // document.getElementById('click_shu1').style.right='6.8vw'
             }else{
                 document.getElementById("checkobox1").style.display='none'
-                document.getElementById('click_shu1').style.right='7.1vw'
+                // document.getElementById('click_shu1').style.right='7.1vw'
             }
             // $('#publish_time,#expire_time')
             for(i = 0; i < list.length; i++){
@@ -580,25 +580,19 @@ font-size: 0.8vw;
         }
         if (ids.length != 0){
             document.getElementById("checkobox2").style.display='block'
-            document.getElementById('click_shu2').style.right='6.8vw'
         }else{
             document.getElementById("checkobox2").style.display='none'
-            document.getElementById('click_shu2').style.right='7.1vw'
         }
         if (ids2.length != 0){
             console.log(ids2.length)
             document.getElementById("checkobox3").style.display='block'
-            document.getElementById('click_shu3').style.right='6.8vw'
         }else{
             document.getElementById("checkobox3").style.display='none'
-            document.getElementById('click_shu3').style.right='7.1vw'
         }
         if (ids3.length != 0){
             document.getElementById("checkobox4").style.display='block'
-            document.getElementById('click_shu4').style.right='6.8vw'
         }else{
             document.getElementById("checkobox4").style.display='none'
-            document.getElementById('click_shu4').style.right='7.1vw'
         }
         renderPage(lists);
 
