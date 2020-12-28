@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>上海咔酷咔新能源</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/amazeui.css"/>
+	<link rel="shortcut icon" href="img/kakuka_1.ico" type="iimg/kakuka"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/index2.css"/>
+	<link rel="stylesheet" href="css/news.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<style>
+		.Information li {
+			 margin:10px;
+		}
+		#page_navigation {
+			margin-top: 69px;
+			margin-bottom: 100px;
+		}
+		#page_navigation a{
+			padding:7px;
+			border:1px solid #ddd;
+			color:black;
+			text-decoration:none
+		}
+		#page_navigation .previous_link {
+			margin-right: 20px;
+		}
+		#page_navigation>.page_link {
+			padding:7px 12px;
+			margin-right: 20px;
+		}
+		.active_page{
+			/*background:#ddd;*/
+			/*color:white !important;*/
+			border:1px solid #000 !important;
+		}
+	</style>
+
+		</head>
+<body>
+    <header class="header" >
+        <div>
+            <div style="width: 15%;float: left;">
+                <a href="./index2.html">
+                    <img class="logo" src="./img/kakuka/KKK_logo.png" alt="">
+                </a>
+            </div>
+            <ul class="ul1 clearfix">
+                <li><a href="./solution.html"><span>能源数字化</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./solutions1.html"><span>城市级解决方案</span></a></li>
+                        <li><a><span>AI智慧化运营</span></a></li>
+                        <li><a href="./solutions2.html"><span>停车场配套</span></a></li>
+                        <li><a href="./solutions4.html"><span>光储充检停</span></a></li>
+                        <li><a href="./solutions3.html"><span>新能源汽车配套</span></a></li>  
+                        <li><a><span>咨询服务</span></a></li>  
+                    </ul>	
+                </li>
+                <li><a href="./product.html"><span>产品介绍</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./product_system.html"><span>AI能源操作系统DyOS</span></a></li>
+                        <li><a href="./product_orderos.html"><span>智慧化工单系统</span></a></li>
+                        <li><a><span>有序充电制单元</span></a></li>
+                        <li><a href="./product_datail11.html"><span>智能交流壁挂式</span></a></li>
+                        <li><a href="./product_detail44.html"><span>智能直流充电桩</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/" target="view_window"><span>管理平台</span></a></li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/?ticket_system=1" target="view_window"><span>工单系统</span></a></li>
+                <li><a><span>咔酷咔</span></a>
+                    <ul class="clearfix">
+                        <li><a href="recruit2.html"><span>加入我们</span></a></li>
+                        <li><a href="myinfo.html"><span>关于我们</span></a></li>
+                        <li><a href="news2.html"><span>新闻</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+<script>
+	var oUl1 = document.getElementsByTagName("ul")[0];
+	var aLi1 = oUl1.children;
+    var aUl2 = oUl1.getElementsByTagName("ul");
+	for(var i=0;i<aLi1.length;i++){
+		aLi1[i].onmouseover = function(){
+            this.getElementsByTagName("ul")[0].style.display = "block"
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom='2px solid #002FA7'
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom='5px'
+            
+		}
+		aLi1[i].onmouseout = function(){
+			this.getElementsByTagName("ul")[0].style.display = "none";
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom=''
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom=''
+		}
+	}
+</script>
+
+<script>
+    function getElementsByClassName(n) {
+        var classElements = [], allElements = document.getElementsByTagName('*');
+        for (var i = 0; i < allElements.length; i++) {
+            if (allElements[i].className == n) {
+                classElements[classElements.length] = allElements[i];
+            }
+        }
+        return classElements;
+    }
+    function init() {
+        // 获取屏幕高度
+        var windowHeight = $(window).height();
+        var redClassElements = getElementsByClassName('item');
+        for (var i = 0; i < redClassElements.length; i++) {
+//            redClassElements[i].style.height = windowHeight - 80 + "px";
+            redClassElements[i].style.height = auto ;
+        }
+//        var a=document.getElementsByClassName("item");
+////        a.style.width="100%";
+//
+//        a.style.height=
+//        console.log(windowHeight)
+    }
+
+</script>
+<div style="width: 100%; height: 100px;background-color: #fff;">
+</div>
+<div style="width: 50%; height: 100%;margin: 0 auto;">
+<div>
+    <div class="title_1">热烈祝贺我司荣获2019第四届上海 •杨浦创业之星大赛“创业优胜奖”</div>
+</div>
+<p class="datetime1">2019 11月 25日</p>
+<p class="content1">喜大普奔！！！     2019第四届上海·杨浦创业之星全球大赛获奖名单已正式公布！！！    
+     上海咔酷咔新能源科技有限公司凭借“新能源汽车人工智能充电解决方案”项目     顺利收获“创业优胜奖”！！！</p>
+
+
+
+
+<p class="content">上海咔酷咔新能源科技有限公司是国内领先的新能源汽车领域充电解决方案专家,专注新能源    
+     产业链条充电环节,掌握核心技术,全部自主知识产权;致力于拓展多样、高效的充电解决方案,    
+      成为助力中国新能源汽车领域发展的先进科技服务商。自2016年以来，上海·杨浦创业之星大     
+      赛已成功举办三届，大赛通过搭建国际化创新创业平台，开拓海外赛场以及全国地区分赛场，    
+       旨在鼓励有志创新创业的人才，发挥自身创新创业能力，实现创新创业梦想。2019第四届上     
+       海•杨浦创业之星全球大赛主题为“创·动全球星·耀未来”，围绕人工智能+物联网、大健康、    
+        文化创意设计、生活及消费升级四大领域专场开赛。历时八个月的2019第四届上海·杨浦创业    
+         之星全球大赛,经过初赛，复赛，半决赛以及总决赛，国内外共计24场比赛，终于圆满结束。</p>
+</div>
+
+<div style="height: 10vw;"></div>
+<div style="float: left;">
+    <ul  id="menu">
+        <li><a>© 2020</a></li>
+        <li><a>上海咔酷咔新能源科技有限公司</a></li>
+        <li><a>产品介绍</a></li>
+        <li><a>解决方案</a></li>		
+        <li><a>关于我们</a></li>		
+    </ul>
+</div>
+
+
+<nav>
+    <ul>
+      <li><a href="#target_1"><img class="click_icon" src="./img/index/weixin.png" alt=""></a>
+        <ul class="li1" id="target_1">
+            <li class="nav_ul_ul_li1"><a href="#"><img class="scan_scan" src="./img/index/xcx_scan.png" alt=""></a></li>
+        </ul>
+    </li>
+    <li><a href="#target_2"><img class="click_icon" src="./img/index/gmail.png" alt=""></a>
+        <ul class="li2" id="target_2">
+            <li class="nav_ul_ul_li2"><a href="#">info@kakuka.com.cn</a></li>
+        </ul>
+
+    </li>
+    <li><a href="#target_3"><img class="click_icon" src="./img/index/iphone.png" alt=""></a>
+        <ul  class="li3" id="target_3">
+            <li  class="nav_ul_ul_li3">
+                <a href="#">021-6048-3977</a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+</nav>  
+
+
+
+<hr>
+<div class="footer-f">Copright © 2016-2018 咔酷咔新能源 - 版权所有 <a href="http://www.beian.miit.gov.cn" style="color:#C4C5C9">沪ICP备16030588号</a></div>
+
+
+</body>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script src="js/scroll.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>

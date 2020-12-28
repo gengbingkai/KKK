@@ -1,0 +1,207 @@
+.bijua1{
+    position: absolute;
+    top: 17vw;
+    letter-spacing: 2px;
+    left: 45%;
+    font-size: 2vw;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 57px;
+    z-index: 1;
+}
+.part-all{
+    padding-left: 180px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+}
+.fontttt{
+    width: 60vw;
+    margin: 0 auto;
+}
+.AIOS{
+    
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 3.5vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+    line-height: 51px;
+}
+.product_aios_font{  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vw;
+    font-size: 1.5vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+    /* line-height: 51px; */
+    background: #FFFFFF;
+}
+.charge_cell{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-size: 3.5vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    z-index: 1;
+}
+.order_os_font{
+    position: absolute;
+    top: 65%;
+    right: 20%;
+    font-size: 3.5vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+    line-height: 51px;
+}
+.bijua2{
+    position: absolute;
+    letter-spacing: 2px;
+    top: 20.5vw;
+    left: 45%;
+    font-size: 3.5vw;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 57px;
+    z-index: 1;
+    
+}
+.bigua4{
+    font-size: 3.5vw;
+    font-family: Microsoft YaHei;
+    font-weight: 1;
+    color: #FFFFFF;
+    line-height: 57px;
+}
+
+.system_font{
+
+    font-size: 16px;
+    font-family: Alibaba PuHuiTi;
+    font-weight: bold;
+    color: #000000;
+    line-height: 32px;
+}
+.bijua3{
+    font-size: 1vw;
+    position: absolute;
+    top: 27vw;
+    left: 45%;width: 11vw;
+    height: 2.7vw;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    /*实现水平居中*/
+    justify-content: center;
+    z-index: 1;
+}
+
+.font_exchange_p{
+    font-size: 2.4vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+    line-height: 57px;
+}
+
+.div_font_exchange{
+    width: 43vw;
+    font-size: 1.25vw;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.9vw;
+    margin-top: 25px;
+}
+.divpp1{
+    width: 191px;
+    height: 95px;
+    border-left: #000000 1px solid;
+}
+.pp1{
+    width: 181px;
+    height: 85px;
+    font-size: 18px;
+    font-family: Alibaba PuHuiTi;
+    font-weight: bold;
+    color: #000000;
+    line-height: 32px;
+}
+#div1, #div2, #div3{
+    font-size: 1.3vw;
+    font-family: Alibaba PuHuiTi;
+    font-weight: bold;
+    color: #000000;
+    /* width: 20vw; */
+    height: 7vw;
+    /* text-align: center; */
+}
+#div1{
+    
+    width: 35%;
+}
+#div2{
+    width: 30%;
+    text-align: center;
+}
+#div3{
+    width: 35%;
+    text-align: center;
+}
+#div1,#div2{
+    border-right: #000000 2px solid; 
+}
+
+.span_but{
+    margin-top: 3.8vw;
+    width: 19vw;
+    font-size: 1vw;
+    height: 3.5vw;
+    border: 2px solid #000000;    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    /*实现水平居中*/
+    justify-content: center;
+}
+
+.tiyan{
+    width: 100%;
+    height: 25vw;
+    background: #002FA7;
+    opacity: 0.2;
+}
+.search_xcx{
+    font-size: 2.8vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+}
+.nice{
+    /* position: relative; 
+    left: 30%;
+    top: 18vw;
+    background-color: #000; */
+    background: #EFF2F3;
+}
+.classs{position: relative; 
+    left: 30%;
+    top: 16vw;
+    z-index: 1;
+
+}

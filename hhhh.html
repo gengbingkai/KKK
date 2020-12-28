@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		
+/* ul,li,a{
+	margin:0;
+	padding:0;
+} */
+/* .ul1{
+	width:510px;
+	margin:0 auto;
+} */
+.ul1 li{
+	list-style:none;
+	width: 150px;
+    height: 50px;
+	line-height:45px;
+	text-align:center;
+	/* border:1px #000 solid; */
+	float:left;
+	background:#FFFFFF;
+}
+/* .uli li:hover{
+	font-size: 50px;
+} */
+.ul1 a{
+	color:#000;
+	text-decoration:none;
+	font-size: 15px;
+}
+.ul1 ul{
+	display:none;
+	padding-right: 20px;
+}
+.ul1 ul li{
+	list-style:none;
+	/* width:170px; */
+	height: 50px;
+	list-style: none;	
+	text-align:center;
+	/* border:1px #000 solid; */
+	background: #F6F8FB;
+	margin-top: 5px;
+	color: #2D2E2E;
+}
+.ul1 ul li a:hover>span {
+            /*关键代码*/
+	padding-bottom: 5px;
+	border-bottom:  2px solid #000;
+}
+.ul1 li a:hover>span {
+            /*关键代码*/
+	padding-bottom: 5px;
+	border-bottom:  2px solid #000;
+}
+.ul1 ul{
+	width:1200px;
+}
+.ul1 ul li{
+	float:left;
+}
+.clearfix:before,.clearfix:after{
+	display:table;
+	content:"";
+}
+.clearfix:after{
+	clear:both;/*在所有元素的父元素上加伪类*/
+}
+.clearfix{
+	*zoom:1;
+}
+</style>
+
+
+	<div>
+		<div style="width: 20%;float: left;">
+			<img style="margin-left: 69px;" width="157px" height="49px" src="./img/kakuka/KKK_logo.png" alt="">
+		</div>
+		<ul class="ul1 clearfix">
+			<li><a href="./solution.html"><span>能源数字化</span></a>
+				<ul class="clearfix">
+					<li><a><span>城市级解决方案</span></a></li>
+					<li><a><span>AI智慧化运营</span></a></li>
+					<li><a><span>停车场配套</span></a></li>
+					<li><a><span>光储充检停</span></a></li>
+					<li><a><span>新能源汽车配套</span></a></li>  
+					<li><a><span>咨询服务</span></a></li>  
+				</ul>	
+			</li>
+			<li><a><span>产品介绍</span></a>
+				<ul class="clearfix">
+					<li><a><span>AI能源操作系统DyOS</span></a></li>
+					<li><a><span>智慧化工单系统</span></a></li>
+					<li><a><span>有序充电制单元</span></a></li>
+					<li><a><span>智能交流壁挂式</span></a></li>
+					<li><a><span>智能直流充电桩</span></a></li>
+				</ul>
+			</li>
+			<li><a><span>管理平台</span></a></li>
+			<li><a><span>工单系统</span></a></li>
+			<li><a><span>咔酷咔</span></a>
+				<ul class="clearfix">
+					<li><a><span>加入我们</span></a></li>
+					<li><a><span>关于我们</span></a></li>
+					<li><a><span>新闻</span></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+<script>
+	var oUl1 = document.getElementsByTagName("ul")[0];
+	var aLi1 = oUl1.children;
+	var aUl2 = oUl1.getElementsByTagName("ul");
+	for(var i=0;i<aLi1.length;i++){
+		aLi1[i].onmouseover = function(){
+			this.getElementsByTagName("ul")[0].style.display = "block";
+			// this.style.backgroundColor = "red";
+		}
+		aLi1[i].onmouseout = function(){
+			this.getElementsByTagName("ul")[0].style.display = "none";
+			// this.style.backgroundColor = "red";
+		}
+	}
+</script>
+</body>
+</html>

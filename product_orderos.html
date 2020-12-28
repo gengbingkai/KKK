@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上海咔酷咔新能源</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/amazeui.css"/>
+    <link rel="shortcut icon" href="img/kakuka_1.ico" type="iimg/kakuka"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/product.css"/>
+    <link rel="stylesheet" href="css/index2.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+    <header class="header" >
+        <div>
+            <div style="width: 15%;float: left;">
+                <a href="./index2.html">
+                    <img class="logo" src="./img/kakuka/KKK_logo.png" alt="">
+                </a>
+            </div>
+            <ul class="ul1 clearfix">
+                <li><a href="./solution.html"><span>能源数字化</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./solutions1.html"><span>城市级解决方案</span></a></li>
+                        <li><a><span>AI智慧化运营</span></a></li>
+                        <li><a href="./solutions2.html"><span>停车场配套</span></a></li>
+                        <li><a href="./solutions4.html"><span>光储充检停</span></a></li>
+                        <li><a href="./solutions3.html"><span>新能源汽车配套</span></a></li>  
+                        <li><a><span>咨询服务</span></a></li>  
+                    </ul>	
+                </li>
+                <li><a href="./product.html"><span>产品介绍</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./product_system.html"><span>AI能源操作系统DyOS</span></a></li>
+                        <li><a href="./product_orderos.html"><span>智慧化工单系统</span></a></li>
+                        <li><a><span>有序充电制单元</span></a></li>
+                        <li><a href="./product_datail11.html"><span>智能交流壁挂式</span></a></li>
+                        <li><a href="./product_detail44.html"><span>智能直流充电桩</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/" target="view_window"><span>管理平台</span></a></li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/?ticket_system=1" target="view_window"><span>工单系统</span></a></li>
+                <li><a><span>咔酷咔</span></a>
+                    <ul class="clearfix">
+                        <li><a href="recruit2.html"><span>加入我们</span></a></li>
+                        <li><a href="myinfo.html"><span>关于我们</span></a></li>
+                        <li><a href="news2.html"><span>新闻</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+<script>
+	var oUl1 = document.getElementsByTagName("ul")[0];
+	var aLi1 = oUl1.children;
+    var aUl2 = oUl1.getElementsByTagName("ul");
+	for(var i=0;i<aLi1.length;i++){
+		aLi1[i].onmouseover = function(){
+            this.getElementsByTagName("ul")[0].style.display = "block"
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom='2px solid #002FA7'
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom='5px'
+            
+		}
+		aLi1[i].onmouseout = function(){
+			this.getElementsByTagName("ul")[0].style.display = "none";
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom=''
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom=''
+		}
+	}
+</script>
+<div>
+    <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'>
+        <ul class="am-slides">
+            <li>
+                <p class="bijua1">Unify&nbsp;&nbsp;</p>
+                <p class="bijua2">智慧化工单系统</p>
+                <a  href="https://wx.kakuka.com.cn/admin/login/?ticket_system=1"  target="view_window"><span class="bijua3">工单系统</span></a>
+                <img class="item"/></li>
+        </ul>
+    </div>
+</div>
+<script>
+    function getElementsByClassName(n) {
+        var classElements = [], allElements = document.getElementsByTagName('*');
+        for (var i = 0; i < allElements.length; i++) {
+            if (allElements[i].className == n) {
+                classElements[classElements.length] = allElements[i];
+            }
+        }
+        return classElements;
+    }
+    function init() {
+        // 获取屏幕高度
+        var windowHeight = $(window).height();
+        var redClassElements = getElementsByClassName('item');
+        for (var i = 0; i < redClassElements.length; i++) {
+//            redClassElements[i].style.height = windowHeight - 80 + "px";
+            redClassElements[i].style.height = auto ;
+        }
+//        var a=document.getElementsByClassName("item");
+////        a.style.width="100%";
+//
+//        a.style.height=
+//        console.log(windowHeight)
+    }
+    window.onload = init;
+    $(function () {
+        var ItemClass = getElementsByClassName('item');
+
+        /**
+         * 根据屏幕宽度的变化决定轮播图片应该展示什么 5    */
+        function resize() {
+            // 获取屏幕宽度
+            var windowWidth = $(window).width();
+            // 判断屏幕属于大还是小
+            var isSmallScreen = windowWidth < 768;
+            // 根据大小为界面上的每一张轮播图设置背景
+            for (var i = 0; i < ItemClass.length; i++) {
+                if (isSmallScreen) {
+//                        console.log(ItemClass[i].css())
+                    ItemClass[i].src = "img/product/order_system.jpg";
+                } else {
+                    ItemClass[i].src = "img/product/order_system.jpg";
+                }
+            }
+//                $('.rollpic > .am-slides > .item').each(function (i, item) {
+//                    var $item = $(item);
+//                    // var imgSrc = $item.data(isSmallScreen ? 'image-xs' : 'image-lg');
+//                    var imgSrc =
+//                        isSmallScreen ? $item.data('image-xs') : $item.data('image-lg');
+//                    // 设置背景图片
+//                    $item.css('backgroundImage', 'url("' + imgSrc + '")');
+//                    //
+//                    // 因为我们需要小图时 尺寸等比例变化，所以小图时我们使用img方式
+//                    if (isSmallScreen) {
+//                        $item.html('<img src="' + imgSrc + '" alt="" />');
+//                    } else {
+//                        $item.empty();
+//                    }
+//                });
+        }
+
+        // // 让window对象立即触发一下resize，初始化div的背景图
+        // $(window).trigger('resize');
+        $(window).on('resize', resize).trigger('resize');
+    });
+</script>
+
+<!--产品概述-->
+<div style="height: 808rpx;width: 100%;">
+    <div style="width:100%;float: left;padding-top: 130px;background: #EFF2F3;">
+        <div style="margin-left: 100px;">
+            <p class="font_exchange_p">智慧化工单系统</p>
+            <div class="div_font_exchange">该产品是一站式充电桩运营管理平台，具备一体化管理、订单管理、实时监 控、运营数据、在线设置五大项功能。适用于桩群运营商。</div>
+            <p class="system_font">平台与设备实时双向通讯，在线掌握管理所有充电设备的运行状态。远程监控设备状态及充电状态，远程控制设备检测及重启。精细化运营分析，营收更直观</p>
+      
+            <div class="span_but">
+                <a href="https://wx.kakuka.com.cn/admin/login/?ticket_system=1" style="color: #000;" target="view_window">工单系统</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nice">
+    <table class="classs">
+        <tr>
+            <td rowspan=2 style="text-align: center;width: 250px;"><img width="157px" height="157px" src="./img/index/xcx_scan.png" alt=""></td>
+            <td class="search_xcx">搜索小程序</td>
+        </tr>
+        <tr>
+            <td class="search_xcx">立即体验你的充电桩</td>
+        </tr>
+    </table>
+</div>
+<div class="tiyan">
+</div>
+
+
+
+<div style="float: left;">
+    <ul  id="menu">
+        <li><a>© 2020</a></li>
+        <li><a>上海咔酷咔新能源科技有限公司</a></li>
+        <li><a>产品介绍</a></li>
+        <li><a>解决方案</a></li>		
+        <li><a>关于我们</a></li>		
+    </ul>
+</div>
+
+
+<nav>
+    <ul>
+      <li><a href="#target_1"><img class="click_icon" src="./img/index/weixin.png" alt=""></a>
+        <ul class="li1" id="target_1">
+            <li class="nav_ul_ul_li1"><a href="#"><img class="scan_scan" src="./img/index/xcx_scan.png" alt=""></a></li>
+        </ul>
+    </li>
+    <li><a href="#target_2"><img class="click_icon" src="./img/index/gmail.png" alt=""></a>
+        <ul class="li2" id="target_2">
+            <li class="nav_ul_ul_li2"><a href="#">info@kakuka.com.cn</a></li>
+        </ul>
+
+    </li>
+    <li><a href="#target_3"><img class="click_icon" src="./img/index/iphone.png" alt=""></a>
+        <ul  class="li3" id="target_3">
+            <li  class="nav_ul_ul_li3">
+                <a href="#">021-6048-3977</a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+</nav>  
+
+
+<hr>
+<div class="footer-f">Copright © 2016-2018 咔酷咔新能源 - 版权所有 <a href="http://www.beian.miit.gov.cn" style="color:#C4C5C9">沪ICP备16030588号</a></div>
+
+
+
+</body>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script src="js/scroll.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>

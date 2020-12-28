@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>上海咔酷咔新能源</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/amazeui.css"/>
+	<link rel="shortcut icon" href="img/kakuka_1.ico" type="iimg/kakuka"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/index2.css"/>
+	<link rel="stylesheet" href="css/news.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<style>
+		.Information li {
+			 margin:10px;
+		}
+		#page_navigation {
+			margin-top: 69px;
+			margin-bottom: 100px;
+		}
+		#page_navigation a{
+			padding:7px;
+			border:1px solid #ddd;
+			color:black;
+			text-decoration:none
+		}
+		#page_navigation .previous_link {
+			margin-right: 20px;
+		}
+		#page_navigation>.page_link {
+			padding:7px 12px;
+			margin-right: 20px;
+		}
+		.active_page{
+			/*background:#ddd;*/
+			/*color:white !important;*/
+			border:1px solid #000 !important;
+		}
+	</style>
+
+		</head>
+<body>
+    <header class="header" >
+        <div>
+            <div style="width: 15%;float: left;">
+                <a href="./index2.html">
+                    <img class="logo" src="./img/kakuka/KKK_logo.png" alt="">
+                </a>
+            </div>
+            <ul class="ul1 clearfix">
+                <li><a href="./solution.html"><span>能源数字化</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./solutions1.html"><span>城市级解决方案</span></a></li>
+                        <li><a><span>AI智慧化运营</span></a></li>
+                        <li><a href="./solutions2.html"><span>停车场配套</span></a></li>
+                        <li><a href="./solutions4.html"><span>光储充检停</span></a></li>
+                        <li><a href="./solutions3.html"><span>新能源汽车配套</span></a></li>  
+                        <li><a><span>咨询服务</span></a></li>  
+                    </ul>	
+                </li>
+                <li><a href="./product.html"><span>产品介绍</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./product_system.html"><span>AI能源操作系统DyOS</span></a></li>
+                        <li><a href="./product_orderos.html"><span>智慧化工单系统</span></a></li>
+                        <li><a><span>有序充电制单元</span></a></li>
+                        <li><a href="./product_datail11.html"><span>智能交流壁挂式</span></a></li>
+                        <li><a href="./product_detail44.html"><span>智能直流充电桩</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/" target="view_window"><span>管理平台</span></a></li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/?ticket_system=1" target="view_window"><span>工单系统</span></a></li>
+                <li><a><span>咔酷咔</span></a>
+                    <ul class="clearfix">
+                        <li><a href="recruit2.html"><span>加入我们</span></a></li>
+                        <li><a href="myinfo.html"><span>关于我们</span></a></li>
+                        <li><a href="news2.html"><span>新闻</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+<script>
+	var oUl1 = document.getElementsByTagName("ul")[0];
+	var aLi1 = oUl1.children;
+    var aUl2 = oUl1.getElementsByTagName("ul");
+	for(var i=0;i<aLi1.length;i++){
+		aLi1[i].onmouseover = function(){
+            this.getElementsByTagName("ul")[0].style.display = "block"
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom='2px solid #002FA7'
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom='5px'
+            
+		}
+		aLi1[i].onmouseout = function(){
+			this.getElementsByTagName("ul")[0].style.display = "none";
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom=''
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom=''
+		}
+	}
+</script>
+
+<script>
+    function getElementsByClassName(n) {
+        var classElements = [], allElements = document.getElementsByTagName('*');
+        for (var i = 0; i < allElements.length; i++) {
+            if (allElements[i].className == n) {
+                classElements[classElements.length] = allElements[i];
+            }
+        }
+        return classElements;
+    }
+    function init() {
+        // 获取屏幕高度
+        var windowHeight = $(window).height();
+        var redClassElements = getElementsByClassName('item');
+        for (var i = 0; i < redClassElements.length; i++) {
+//            redClassElements[i].style.height = windowHeight - 80 + "px";
+            redClassElements[i].style.height = auto ;
+        }
+//        var a=document.getElementsByClassName("item");
+////        a.style.width="100%";
+//
+//        a.style.height=
+//        console.log(windowHeight)
+    }
+
+</script>
+
+<div style="width: 50%; height: 100%;margin: 0 auto;">
+<div>
+    <div class="title_1">咔酷咔携手京东物流集团，构建电 动汽车美好充电体验全生态</div>
+</div>
+<p class="datetime1">2020 2月 27日</p>
+<p class="content1">2月10日，上海咔酷咔新能源科技有限公司（以下简称“咔酷咔”）与京东物流集团“云签署 
+     ”合作协议。双方将通过搭建充电运营服务平台，共建新能源车服务生态圈，升级用户体验， 
+      助力新能源产业发展。</p>
+
+<p class="content">咔酷咔以“为美好生活充电”为理念，不断自主创新攻克技术难题，提供充电全生命周期服务 
+     体系，以科技驱动新能源充电智能化和云端化，通过大数据驱动能源链条高效能。公司核心团  
+     队均为汽车及相关行业博士和硕士，具备全球顶尖学府学术背景，兼具世界500强行业顶尖公 
+      司管理经验和创业经历，同时拥有汽车、材料、能源、电力等领域的科技部评审专家、千人专  
+      家、973首席科学家、东方学者、特聘教授、学术带头人等专家团队。</p>
+
+
+<p class="content">京东物流集团以降低社会物流成本为使命，致力于成为全球供应链基础设施服务商。围绕“  
+    短链、智能、共生”，京东物流正携手社会各界共建全球智能供应链基础网络（GSSC），聚 
+     焦供应链、快递、供应链数字化产业平台三大业务板块，为客户、行业、社会提供全面的一体 
+      化的供应链解决方案，实现“有速度更有温度”的优质物流服务。</p>
+
+<p class="content">双方表示，此次合作是优势互补、资源共享的强强联合，在追求极致用户体验、构建安全绿色 
+     出行生态方面双方达成高度共识。双方将在充电桩安装、电动车救援、电动车检测、维保、场 
+      站巡检、升级改造、运营服务等多个环节紧密合作，联手打造充电数据中台系统，数据透明化 
+       可穿透，充分提高用户充电便捷性、保障用户车安全。持续深化车后市场生态服务，构建完整 
+        生态服务链，为用户提供更多增值服务。</p>
+
+<p class="content">以能源和信息连接各个领域，更好地为新能源车主提供服务，双方以开放姿态，共同推进新能 
+     源汽车的普及和使用，赋能行业的未来。</p>
+
+    </div>
+    <div style="height: 10vw;"></div>
+    <div style="float: left;">
+        <ul  id="menu">
+            <li><a>© 2020</a></li>
+            <li><a>上海咔酷咔新能源科技有限公司</a></li>
+            <li><a>产品介绍</a></li>
+            <li><a>解决方案</a></li>		
+            <li><a>关于我们</a></li>		
+        </ul>
+    </div>
+    
+
+    <nav>
+        <ul>
+          <li><a href="#target_1"><img class="click_icon" src="./img/index/weixin.png" alt=""></a>
+            <ul class="li1" id="target_1">
+                <li class="nav_ul_ul_li1"><a href="#"><img class="scan_scan" src="./img/index/xcx_scan.png" alt=""></a></li>
+            </ul>
+        </li>
+        <li><a href="#target_2"><img class="click_icon" src="./img/index/gmail.png" alt=""></a>
+            <ul class="li2" id="target_2">
+                <li class="nav_ul_ul_li2"><a href="#">info@kakuka.com.cn</a></li>
+            </ul>
+    
+        </li>
+        <li><a href="#target_3"><img class="click_icon" src="./img/index/iphone.png" alt=""></a>
+            <ul  class="li3" id="target_3">
+                <li  class="nav_ul_ul_li3">
+                    <a href="#">021-6048-3977</a>
+                </li>
+            </ul>
+        </li>
+    
+    </ul>
+    </nav>  
+     
+    
+    
+    <hr>
+    <div class="footer-f">Copright © 2016-2018 咔酷咔新能源 - 版权所有 <a href="http://www.beian.miit.gov.cn" style="color:#C4C5C9">沪ICP备16030588号</a></div>
+    
+
+</body>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script src="js/scroll.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>

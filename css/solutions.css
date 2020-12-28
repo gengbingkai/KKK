@@ -1,0 +1,243 @@
+
+.Urban_Solutions{
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    font-size: 3.3vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 72px;
+    z-index: 1;
+}
+
+.Urban_Solutions_EN{
+    position: absolute;
+    top: 48%;
+    left: 35%;
+    font-size: 3vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.Urban_Solutions_but{
+    position: absolute;
+    top:25vw;
+    left: 44%; width: 15vw;
+    height: 3vw;
+    border: 2px solid;
+    font-size: 1vw;
+    color: #FFFFFF;
+    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    /*实现水平居中*/
+    justify-content: center;
+    z-index: 1;
+}
+.AI_Intelligence_Operation{
+    position: absolute;
+    top: 14vw;
+    left: 10%;
+    font-size: 3.3vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 72px;
+    z-index: 1;
+}
+.AI_Intelligence_Operation_EN{
+    position: absolute;
+    top: 19vw;
+    left: 10%;
+    font-size: 3vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    z-index: 1;
+}
+.AI_Intelligence_Operation_but{
+    position: absolute;
+    top: 25vw;
+    left: 10%;    
+    width: 15vw;
+    height: 3vw;
+    border: 2px solid;
+    color: #FFFFFF;
+    font-size: 1vw;
+    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    /*实现水平居中*/
+    justify-content: center;
+    z-index: 1;
+}
+
+
+.Parking_Lot_Matching{
+    position: absolute;
+    top: 14vw;
+    right:10% ; 
+    z-index: 1;
+    font-size: 3.3vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 72px;
+}
+.Parking_Lot_Matching_EN{
+    position: absolute;
+    top: 19vw;
+    right: 10%;
+    font-size: 3vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.Parking_Lot_Matching_but{
+    position: absolute;
+    top: 60%;
+    right: 10%;    
+    width: 15vw;
+    height: 3vw;
+    border: 2px solid;
+    color: #FFFFFF;
+    font-size: 1vw;
+    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    /*实现水平居中*/
+    justify-content: center;
+    z-index: 1;
+    
+}
+.urban{
+    /* width: 100%; */
+    height: 35vw;
+    background: #FFFFFF;
+}
+
+.urban_font{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 2.4vw;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 300;
+    color: #000000;
+    background: linear-gradient(256deg, #011C61 0%, #002FA7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.urban_font2{
+    text-align: center;
+    margin-top: 1vw;
+    font-size: 1.4vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+    line-height: 40px;
+}
+.urban_font3{margin-top: 1vw;
+    text-align: center;
+    font-size: 1.4vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+}
+
+.div_yousi{
+    /* width: 100%; */
+    height: 577px;
+    background: #EFF1F2;
+}
+
+.font_yousi{
+    padding-top: 100px;
+    font-size: 3vw;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 400;
+    color: #000000;
+}
+.div_jianbian{
+    margin-top: 2vw;
+    width: 108px;
+    height: 2px;
+    background: linear-gradient(90deg, #002FA7 0%, #FFFFFF 100%);
+}
+.div_li{
+    width: 50%;
+    font-size: 1.4vw;
+    float: left;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #010101;
+    line-height: 4vw;
+}
+
+.park_font1{
+    /* margin-left: 24%; */
+    text-align: center;
+    width: 55vw;
+    /* margin-left: 300px; */
+    margin-top: 1.5vw;
+    margin-left: 22%;
+    font-size: 1.4vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+    /* line-height: 40px; */
+}
+.div_youshi_font{
+    width: 546px;
+    font-size: 1.4vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #010101;
+    margin-top: 2vw;
+    float: left;
+}
+.div_youshi_font_you{
+    margin-left: 100px;
+    width: 546px;
+    font-size: 1.4vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    margin-top: 2vw;
+    color: #010101;
+    float: left;
+}
+.traffic_font1{
+    width: 55vw;
+    text-align: center;
+    margin-left: 24%;
+    padding-top: 2vw;
+    font-size: 1.4vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+}
+.div_traffic_font{
+    width: 39vw;
+    font-size:1.3vw;
+    margin-top: 2vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #010101;
+}
+
+
+#target_1:target, #target_2:target, #target_3:target, #target_4:target {
+    display: block;
+    float: left;     
+}
+#menu ul ul{
+    display: none
+}

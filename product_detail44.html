@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上海咔酷咔新能源</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/amazeui.css"/>
+    <link rel="shortcut icon" href="img/kakuka_1.ico" type="iimg/kakuka"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/product.css"/>
+    <link rel="stylesheet" href="css/index2.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+    <header class="header" >
+        <div>
+            <div style="width: 15%;float: left;">
+                <a href="./index2.html">
+                    <img class="logo" src="./img/kakuka/KKK_logo.png" alt="">
+                </a>
+            </div>
+            <ul class="ul1 clearfix">
+                <li><a href="./solution.html"><span>能源数字化</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./solutions1.html"><span>城市级解决方案</span></a></li>
+                        <li><a><span>AI智慧化运营</span></a></li>
+                        <li><a href="./solutions2.html"><span>停车场配套</span></a></li>
+                        <li><a href="./solutions4.html"><span>光储充检停</span></a></li>
+                        <li><a href="./solutions3.html"><span>新能源汽车配套</span></a></li>  
+                        <li><a><span>咨询服务</span></a></li>  
+                    </ul>	
+                </li>
+                <li><a href="./product.html"><span>产品介绍</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./product_system.html"><span>AI能源操作系统DyOS</span></a></li>
+                        <li><a href="./product_orderos.html"><span>智慧化工单系统</span></a></li>
+                        <li><a><span>有序充电制单元</span></a></li>
+                        <li><a href="./product_datail11.html"><span>智能交流壁挂式</span></a></li>
+                        <li><a href="./product_detail44.html"><span>智能直流充电桩</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/" target="view_window"><span>管理平台</span></a></li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/?ticket_system=1" target="view_window"><span>工单系统</span></a></li>
+                <li><a><span>咔酷咔</span></a>
+                    <ul class="clearfix">
+                        <li><a href="recruit2.html"><span>加入我们</span></a></li>
+                        <li><a href="myinfo.html"><span>关于我们</span></a></li>
+                        <li><a href="news2.html"><span>新闻</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+<script>
+	var oUl1 = document.getElementsByTagName("ul")[0];
+	var aLi1 = oUl1.children;
+    var aUl2 = oUl1.getElementsByTagName("ul");
+	for(var i=0;i<aLi1.length;i++){
+		aLi1[i].onmouseover = function(){
+            this.getElementsByTagName("ul")[0].style.display = "block"
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom='2px solid #002FA7'
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom='5px'
+            
+		}
+		aLi1[i].onmouseout = function(){
+			this.getElementsByTagName("ul")[0].style.display = "none";
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom=''
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom=''
+		}
+	}
+</script>
+
+<div>
+    <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'>
+        <ul class="am-slides">
+            <li>
+                <p class="bijua1">Speed &nbsp;&nbsp;</p>
+                <p class="bijua2">智能直流&nbsp;&nbsp;<span class="bigua4">充电桩</span></p>
+                <a><span class="bijua3">急速体验</span></a>
+                <img class="item"/></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function getElementsByClassName(n) {
+        var classElements = [], allElements = document.getElementsByTagName('*');
+        for (var i = 0; i < allElements.length; i++) {
+            if (allElements[i].className == n) {
+                classElements[classElements.length] = allElements[i];
+            }
+        }
+        return classElements;
+    }
+    function init() {
+        // 获取屏幕高度
+        var windowHeight = $(window).height();
+        var redClassElements = getElementsByClassName('item');
+        for (var i = 0; i < redClassElements.length; i++) {
+//            redClassElements[i].style.height = windowHeight - 80 + "px";
+            redClassElements[i].style.height = auto ;
+        }
+//        var a=document.getElementsByClassName("item");
+////        a.style.width="100%";
+//
+//        a.style.height=
+//        console.log(windowHeight)
+    }
+    window.onload = init;
+    $(function () {
+        var ItemClass = getElementsByClassName('item');
+
+        /**
+         * 根据屏幕宽度的变化决定轮播图片应该展示什么 5    */
+        function resize() {
+            // 获取屏幕宽度
+            var windowWidth = $(window).width();
+            // 判断屏幕属于大还是小
+            var isSmallScreen = windowWidth < 768;
+            // 根据大小为界面上的每一张轮播图设置背景
+            for (var i = 0; i < ItemClass.length; i++) {
+                if (isSmallScreen) {
+//                        console.log(ItemClass[i].css())
+                    ItemClass[i].src = "img/product/zhiliu.jpg";
+                } else {
+                    ItemClass[i].src = "img/product/zhiliu.jpg";
+                }
+            }
+//                $('.rollpic > .am-slides > .item').each(function (i, item) {
+//                    var $item = $(item);
+//                    // var imgSrc = $item.data(isSmallScreen ? 'image-xs' : 'image-lg');
+//                    var imgSrc =
+//                        isSmallScreen ? $item.data('image-xs') : $item.data('image-lg');
+//                    // 设置背景图片
+//                    $item.css('backgroundImage', 'url("' + imgSrc + '")');
+//                    //
+//                    // 因为我们需要小图时 尺寸等比例变化，所以小图时我们使用img方式
+//                    if (isSmallScreen) {
+//                        $item.html('<img src="' + imgSrc + '" alt="" />');
+//                    } else {
+//                        $item.empty();
+//                    }
+//                });
+        }
+
+        // // 让window对象立即触发一下resize，初始化div的背景图
+        // $(window).trigger('resize');
+        $(window).on('resize', resize).trigger('resize');
+    });
+</script>
+
+<!--产品概述-->
+<div style="height: 47.5vw;width: 100%;background: #EFF2F3;">
+    <div style="width:50%;float: left;margin-top: 6vw;">
+        <div style="margin-left: 100px;">
+            <p class="font_exchange_p">智能直流充电桩</p>
+            <div class="div_font_exchange">该产品是一款适用于大型商业综合体、公共充电场所的大功率快速充电设 备。满足最新国标，满足国网、南网最新认证标准，全面兼容市面各品牌 车辆，能够高效、快速、安全的为电动物流车、电动出租车等营运车辆补 充能量。网联化硬件支持、轻松实现远程管理与维护。支持刷卡、微信、 支付宝等多种支付方式。</div>
+            <div style="display: flex;margin-top: 3vw;">
+                <div id="div1" style="text-align: center;width: 35%;">
+                    7寸触摸液晶屏幕让充<br>
+                    电更便捷，充电<br>
+                    进程更直观 
+                </div>
+                <div id="div2">
+                    <div style="text-align: center;">
+                        <p>
+                        自动充满、按时间、<br>
+                        电量、金额充电，让<br>
+                        充电更人性化
+                        </p>
+                    </div>
+                    
+                </div>
+                <div id="div3" style="text-align: center;width: 35%;">
+                    <p>汽车专业技术背景，让<br>充电
+                    更高效，更保护电<br>池</p>
+                </div>
+            </div>  
+            <div class="span_but">
+                <a href=""><span style="color: #000;">智能直流</span> </a>
+            </div>
+        </div>
+
+    </div>
+    <div style="margin-top: 10vw;width: 50%;float: right;text-align: center;">
+        <img style="width: 12vw;height: 27vw;" src="img/size_muralzhi.png" >
+    </div>
+</div>
+
+<!--产品亮点-->
+
+
+<!--产品参数-->
+<div class="parameter part-allpart-all">
+    <div class="am-container-1">
+        <div class="news part-all">
+            <p>技术参数</p>
+        </div>
+        <table class="am-table am-table-bordered am-table-centered">
+            <thead>
+            <tr>
+                <th colspan=2>智能交流壁挂式</th>
+                <th colspan=3>参数</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="am-text-middle" rowspan=11>电<br>气<br>指<br>标</td>
+                <td>输入电压</td>
+                <td colspan=3>AC 380V </td>
+            </tr>
+            <tr class="yanse">
+                <td>连接配线方式</td>
+                <td colspan=3>三 相 四线 / L1, L2, L3, N, PE</td>
+            </tr>
+            <tr>
+                <td>输入频率</td>
+                <td colspan=3>50/60Hz</td>
+            </tr>
+            <tr class="yanse">
+                <td>功率因素</td>
+                <td colspan=3>>0.99</td>
+            </tr>
+            <tr>
+                <td>额定功率</td>
+                <td>30kW</td>
+                <td>60kW</td>
+                <td>90kW</td>
+            </tr>
+            <tr class="yanse">
+                <td>输出电压</td>
+                <td colspan=3>200-750VDC</td>
+            </tr>
+            <tr>
+                <td>输出电流</td>
+                <td>45A</td>
+                <td>90A</td>
+                <td>180A</td>
+            </tr>
+            <tr class="yanse">
+                <td>输出方式</td>
+                <td>单枪</td>
+                <td colspan=2>单枪/双枪</td>
+            </tr>
+            <tr>
+                <td>输出配置</td>
+                <td>无</td>
+                <td colspan=2>支持轮充/均充/智能分配</td>
+            </tr>
+            <tr class="yanse">
+                <td>输出效率</td>
+                <td colspan=3>≥95%</td>
+            </tr>
+            <tr>
+                <td>辅助电源</td>
+                <td colspan=3>12/24V 自适应</td>
+            </tr>
+            <tr>
+                <td class="am-text-middle" rowspan=3>外<br>观<br>结<br>构</td>
+                <td class="yanse">设备尺寸</td>
+                <td class="yanse">1700 x 700 x 500 mm</td>
+                <td class="yanse">1800 x 700 x 500 mm</td>
+                <td class="yanse">2000 x 760 x1060 mm</td>
+            </tr>
+            <tr>
+                <td>安装方式</td>
+                <td>落地式/壁挂式</td>
+                <td colspan=2>落地式</td>
+            </tr>
+            <tr class="yanse">
+                <td>线缆长度</td>
+                <td colspan=3>标配5m</td>
+            </tr>
+            <tr> 
+                <td class="am-text-middle" rowspan=5>功<br>能<br>设<br>计</td>
+                <td>充电模式</td>
+                <td colspan=3>实时动态二维码、自动充满、按时间、按电量、按金额</td>
+            </tr>
+            <tr class="yanse">
+                <td>支付方式</td>
+                <td colspan=3>RFID刷卡、微信、支付宝</td>
+            </tr>
+            <tr>
+                <td>联网方式</td>
+                <td colspan=3>GPRS（标配2G</td>
+            </tr>
+            <tr class="yanse">
+                <td>通讯扩展选配</td>
+                <td colspan=3>3G/4G通信、WLAN、CAN、ZigBee、RS485</td>
+            </tr>
+            <tr>
+                <td>运营管理平台</td>
+                <td colspan=3>支持</td>
+            </tr>
+            <tr>
+                <td class="am-text-middle" rowspan=4>人<br>机<br>交<br>互</td>
+                <td class="yanse">显示屏</td>
+                <td class="yanse" colspan=3>7寸真彩触摸显示屏</td>
+            </tr>
+            <tr>
+                <td>状态指示灯</td>
+                <td colspan=3>LED灯</td>
+            </tr>
+            <tr class="yanse">
+                <td>视频播放</td>
+                <td colspan=3>支持</td>
+            </tr>
+            <tr>
+                <td>计费标准</td>
+                <td colspan=3>联网在线配置</td>
+            </tr>
+            <tr>
+                <td class="am-text-middle" rowspan=6>环<br>境<br>指<br>标</td>
+                <td class="yanse">防护等级</td>
+                <td class="yanse" colspan=3>IP55</td>
+            </tr>
+            <tr>
+                <td>冷却方式</td>
+                <td>自然风冷</td>
+                <td>强制风冷</td>
+                <td>强制风冷</td>
+            </tr>
+            <tr class="yanse">
+                <td>工作温度</td>
+                <td colspan=3>-30°C ~ +55°C</td>
+            </tr>
+            <tr>
+                <td>工作湿度</td>
+                <td colspan=3>5% ~ 95%无凝露</td>
+            </tr>
+            <tr class="yanse">
+                <td>工作海拔</td>
+                <td colspan=3><2000m</td>
+            </tr>
+            <tr>
+                <td>噪声控制</td>
+                <td colspan=3>≤63dB</td>
+            </tr>
+            <tr>
+                <td>安全设计</td>
+                <td class="yanse" colspan=4>过压保护、欠压保护、过载保护、短路保护、漏电保护、接地保护、防雷保护、急停保护</td>
+            </tr>
+            <tr>
+                <td>拓展功能</td>
+                <td colspan=4>远程设备状态监控、远程设备急停重启、OTA软件升级、平台接入</td>
+            </tr>
+            </tbody>
+        </table>
+        <p style="padding-left: 180px;">常规参数@25℃环境 因本公司迭代速度较快，如在本表基础上有新规格变化恕不另行通知</p>
+        <div style="text-align: right"><a class="download" href="img/咔酷咔-智能直流充电桩.pdf" download="咔酷咔-智能直流充电桩.pdf">点击下载产品说明书</a></div>
+    </div>
+</div>
+<div  class="nice" style="background :#FFFFFF;">
+    <table class="classs">
+        <tr>
+            <td rowspan=2 style="text-align: center;width: 250px;"><img width="157px" height="157px" src="./img/index/xcx_scan.png" alt=""></td>
+            <td class="search_xcx">搜索小程序</td>
+        </tr>
+        <tr>
+            <td class="search_xcx">立即体验你的充电桩</td>
+        </tr>
+    </table>
+</div>
+<div class="tiyan">
+</div>
+<div style="float: left;">
+    <ul  id="menu">
+        <li><a>© 2020</a></li>
+        <li><a>上海咔酷咔新能源科技有限公司</a></li>
+        <li><a>产品介绍</a></li>
+        <li><a>解决方案</a></li>		
+        <li><a>关于我们</a></li>		
+    </ul>
+</div>
+
+
+<nav>
+    <ul>
+      <li><a href="#target_1"><img class="click_icon" src="./img/index/weixin.png" alt=""></a>
+        <ul class="li1" id="target_1">
+            <li class="nav_ul_ul_li1"><a href="#"><img class="scan_scan" src="./img/index/xcx_scan.png" alt=""></a></li>
+        </ul>
+    </li>
+    <li><a href="#target_2"><img class="click_icon" src="./img/index/gmail.png" alt=""></a>
+        <ul class="li2" id="target_2">
+            <li class="nav_ul_ul_li2"><a href="#">info@kakuka.com.cn</a></li>
+        </ul>
+
+    </li>
+    <li><a href="#target_3"><img class="click_icon" src="./img/index/iphone.png" alt=""></a>
+        <ul  class="li3" id="target_3">
+            <li  class="nav_ul_ul_li3">
+                <a href="#">021-6048-3977</a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+</nav>  
+
+
+
+<hr>
+<div class="footer-f">Copright © 2016-2018 咔酷咔新能源 - 版权所有 <a href="http://www.beian.miit.gov.cn" style="color:#C4C5C9">沪ICP备16030588号</a></div>
+
+</body>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script src="js/scroll.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>

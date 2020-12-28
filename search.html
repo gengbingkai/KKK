@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上海咔酷咔新能源</title>
+    <meta name="keywords" content="新能源">
+    <meta name="keywords" content="咔酷咔">
+    <meta name="keywords" content="充电桩">
+    <meta name="description" content="新能源充电桩">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <script src="js/jquery.min.js"></script>
+    <!--<script src="js/main.min.js"></script>-->
+    <link rel="stylesheet" href="css/amazeui.css"/>
+    <link rel="shortcut icon" href="img/kakuka_1.ico" type="iimg/kakuka"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/index2.css"/>
+    <link rel="stylesheet" href="css/kakuka.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+    <header class="header" >
+        <div>
+            <div style="width: 15%;float: left;">
+                <a href="./index2.html">
+                    <img class="logo" src="./img/kakuka/KKK_logo.png" alt="">
+                </a>
+            </div>
+            <ul class="ul1 clearfix">
+                <li><a href="./solution.html"><span>能源数字化</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./solutions1.html"><span>城市级解决方案</span></a></li>
+                        <li><a><span>AI智慧化运营</span></a></li>
+                        <li><a href="./solutions2.html"><span>停车场配套</span></a></li>
+                        <li><a href="./solutions4.html"><span>光储充检停</span></a></li>
+                        <li><a href="./solutions3.html"><span>新能源汽车配套</span></a></li>  
+                        <li><a><span>咨询服务</span></a></li>  
+                    </ul>	
+                </li>
+                <li><a href="./product.html"><span>产品介绍</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./product_system.html"><span>AI能源操作系统DyOS</span></a></li>
+                        <li><a href="./product_orderos.html"><span>智慧化工单系统</span></a></li>
+                        <li><a><span>有序充电制单元</span></a></li>
+                        <li><a href="./product_datail11.html"><span>智能交流壁挂式</span></a></li>
+                        <li><a href="./product_detail44.html"><span>智能直流充电桩</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/" target="view_window"><span>管理平台</span></a></li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/?ticket_system=1" target="view_window"><span>工单系统</span></a></li>
+                <li><a><span>咔酷咔</span></a>
+                    <ul class="clearfix">
+                        <li><a href="recruit2.html"><span>加入我们</span></a></li>
+                        <li><a href="myinfo.html"><span>关于我们</span></a></li>
+                        <li><a href="news2.html"><span>新闻</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+<script>
+	var oUl1 = document.getElementsByTagName("ul")[0];
+	var aLi1 = oUl1.children;
+    var aUl2 = oUl1.getElementsByTagName("ul");
+	for(var i=0;i<aLi1.length;i++){
+		aLi1[i].onmouseover = function(){
+            this.getElementsByTagName("ul")[0].style.display = "block"
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom='2px solid #002FA7'
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom='5px'
+            
+		}
+		aLi1[i].onmouseout = function(){
+			this.getElementsByTagName("ul")[0].style.display = "none";
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom=''
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom=''
+		}
+	}
+</script>
+
+<div style="height: 50px;">
+
+</div>
+<div class="rollpic">
+	<div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'>
+		<ul class="am-slides">
+			<li>
+                <p class="myinfo">加入我们</p>
+                <img class="item"/>
+            </li>
+		</ul>
+	</div>
+</div>
+<style>
+	.border{
+		width: 75vw;
+		height: 35vw;
+		border: 1px solid #CECECE;
+    }
+
+	.td{
+        /* height: 6.35vw;width: 20vw;
+		font-size: 1.5vw;
+		font-family: Microsoft YaHei;
+		font-weight: bold;
+		color: #000;
+		line-height: 100px;
+        text-align: center; */
+        
+        color: #505356;
+    }
+    #search_table tr td{
+        /* background-color: rgba(0,47,167,0.2); */
+        height: 5vw;width: 16vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.5vw;
+        /* border-right: 1px solid #CECECE; */
+    }
+
+	
+
+
+	#tdtd1:target,#tdtd2:target,#tdtd3:target,#tdtd4:target{ 
+		/* background: #002FA7;
+		opacity: 0.2; */ 
+		display: block;
+	}
+	a{
+		text-decoration:none;
+	}
+	.hhhhjj:target{
+		font-size: 100px;
+	}
+	.sss{
+		display: none;
+	}
+	.scarch_one{
+        /* position: relative; */
+        padding-left: 3vw;
+        padding-top: 1.5vw;
+        font-size: 1.5vw;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #002FA7;
+        line-height: 29px;
+	}
+	.div-input{
+        /* float: right; */
+        margin-top: 1.5vw;
+        margin-left: 3vw;
+		width: 53vw;
+		height: 4.4vw;
+        border: 2px solid #DCDCDC;
+        
+	}
+	.tishi{
+        /* float: right; */
+        margin-top: 1.5vw;
+        margin-left: 3vw;
+		width: 53vw;
+		height: 6vw;
+        background: rgba(0,47,167,0.2);
+    }
+    .tishi_font{
+        position: relative;
+        top: 1vw;
+        left: 1vw;
+        font-size: 1vw;
+    }
+    .didian{position: relative;
+        left: 5vw;
+        margin-top: 1.5vw;
+		font-size: 1.2vw;
+		font-family: Microsoft YaHei;
+		font-weight: 400;
+		color: #002FA7;
+		line-height: 34px;
+
+	}
+	
+	#wrap{
+		display: flex;
+		width: 100%;
+		height: 50px;
+	}
+	.cate{
+        float: left;
+        margin-left: 3vw;
+        margin-top: 1vw;
+    }
+    form{
+        /* position: relative;
+        margin-left: 20vw; */
+        z-index: 999;
+    }
+	.cate_font{
+		font-size: 1.2vw;
+		font-family: Microsoft YaHei;
+		font-weight: bold;
+		color: #383C3F;
+        line-height: 34px;
+        padding-bottom: 1vw;
+    }
+    .seach{
+        width: 16vw;border: none;outline: none;font-size: 20px;color: #9A9A9A;margin-left: 10px;
+					height: 3.5vw;z-index: 1;
+    }.search_img{
+        width: 2.7vw;
+        height: 2.7vw;
+        margin-right: 2%;
+        float: right;
+        margin-top: 0.5vw;
+    }
+    .click_shu1{
+height: 5vw;width: 3%;background-color: #002FA7;display: none;float: left;position: relative;right: 4.9vw;
+    }
+    
+
+    .bg{
+        height: 5vw;width: 19.85vw;background-color:  #002FA7;float: left;opacity: 0.2;position: absolute;right: 63.8vw;display:none;
+    }
+    input[type=checkbox]{
+     cursor: pointer;
+     position: relative;
+     width: 1.3vw;
+     height: 1.3vw;
+}
+
+input[type=checkbox]::after{
+     position: absolute;
+     top: 0;
+    background: #F5F5F5;
+    border: 2px solid #D0D0D0;
+     color: #FFFFFF;
+     width: 1.3vw;
+     height: 1.3vw;
+     display: inline-block;
+     visibility: visible;
+     padding-left: 0px;
+     text-align: center;
+     content: ' ';
+     border-radius: 3px
+}
+span{
+    font-weight: 400;
+}
+        
+input[type=checkbox]:checked::after{
+     content: "✓";
+     font-size: 0.9vw;
+     font-weight: bold;
+     background: #002FA7;
+     border: none
+}
+.clear{
+
+    float: right;position:relative;bottom: 0;right: 9vw;border-bottom: 1px solid #424548;
+font-weight: normal;
+font-size: 0.8vw;
+}
+</style>
+<div style="padding-left:15vw;padding-top: 5%;">
+    <div class="border">
+		<div style="width:21.4%;height: 100%;float: left;border-right: 1px solid #DCDCDC;">
+			<table id="search_table">
+				<tr>
+					<td style="font-weight: 500;color: #002FA7;border-bottom: 1px solid  #DCDCDC;background: #f5f5f5;">筛选条件</td>
+				</tr>
+				<tr>
+                    <td id="td1" class="td" onclick="td(1);" style="background: rgba(0,47,167,0.2);">
+                        <div id="click_shu1" class="click_shu1" style="display: block;"></div>
+                        <!-- <div id="bg1" class="bg"></div> -->
+                        
+                        关键词&nbsp;&nbsp;&nbsp;
+                        
+                        <div id="checkobox1" class="checkbox_true"></div>
+                    </td>
+				</tr>
+				<tr>
+                    
+                    <td id="td2" onclick="td(2);" class="td">
+                        <div id="click_shu2"  class="click_shu1"></div>
+                        工作地点
+                        <div id="checkobox2" class="checkbox_true"></div>
+                    </td>
+				</tr>
+				<tr>
+                    <td id="td3" class="td" onclick="td(3);">
+                        <div id="click_shu3"  class="click_shu1"></div>
+                        <!-- <div id="bg3" class="bg"></div> -->
+                        部门类别
+                        <div id="checkobox3" class="checkbox_true"></div>
+                    </td>
+				</tr>
+				<tr>
+                    <td id="td4" class="td" onclick="td(4);">
+                        <div id="click_shu4"  class="click_shu1"></div>
+                        <!-- <div id="bg4" class="bg"></div> -->
+                        工作类别
+                        <div id="checkobox4" class="checkbox_true"></div>
+                    </td>
+				</tr>
+			</table>
+		</div>
+		<div style="float: left;">
+			<div class="sss" style="display: block;" id="tdtd1">
+                <div class="scarch_one">职位搜索</div>
+				<div class="div-input">
+                    <img class="search_img" src="./img/kakuka/search.png" alt="">
+					<input class="seach" autocomplete="off"   onchange="search()" type="text" name=""value="" id="key-word">
+                </div>
+                <div class="tishi">
+				    <span class="tishi_font">已经应用了特定的筛选方式。要变更搜索结果，请更改筛选方式。</span>
+                </div>
+			</div>
+			<div class="sss" id="tdtd2">
+				<p class="didian"></p>
+				<div>
+					<form name="testForm">
+                        <div class="cate">
+						<input style="margin-top: 0.05vw;" type="checkbox" onclick="test()" name="vehicle" value="上海"/>
+                        <span style="font-size: 1vw;margin-left: 1vw;">上海</span>
+                        
+
+						
+						<input style="margin-left: 5vw;margin-top: 0.05vw;" onclick="test()" type="checkbox" name="vehicle" value="天津" />
+						<span style="font-size: 1vw;margin-left: 1vw;">天津</span>
+
+						
+						<input style="margin-left: 5vw;margin-top: 0.05vw;" onclick="test()" type="checkbox" name="vehicle" value="北京" />
+						<span style="font-size: 1vw;margin-left: 1vw;">北京</span>
+						
+						<input style="margin-left: 5vw;margin-top: 0.05vw;" onclick="test()" type="checkbox" name="vehicle" value="河南" />
+                        <span style="font-size: 1vw;margin-left: 1vw;">河南</span>
+                    </div>
+					</form>	
+				</div>
+			</div>
+			<div class="sss" id="tdtd3">
+				<p class="didian"></p>
+				<form name="from2">
+					<div class="cate">
+						<p class="cate_font">产品设计与研发</p>
+						<input style="margin-top: 0.05vw;" onclick="test()" type="checkbox" name="vehicle" value="智能硬件"  />
+						<span style="font-size: 1vw;margin-left: 1vw;">智能硬件</span><br><br>
+
+						
+						<input style="margin-top: 0.05vw;" onclick="test()" type="checkbox" name="vehicle" value="前端工程师"  />
+						<span style="font-size: 1vw;margin-left: 1vw;">前端工程师</span>
+					</div>
+					<div class="cate" style="margin-left: 5vw;">
+						<p class="cate_font">管理与支持</p>
+						<input style="margin-top: 0.05vw;" onclick="test()" type="checkbox" name="vehicle" value="人力资源" />
+						<span style="font-size: 1vw;margin-left: 1vw;">人力资源</span><br><br>
+
+					</div>
+					<div class="cate" style="margin-left: 5vw;">
+						<p class="cate_font">用户与服务</p>
+						<input style="margin-top: 0.05vw;" onclick="test()" type="checkbox" name="vehicle" value="用户运营" />
+						<span style="font-size: 1vw;margin-left: 1vw;">用户运营</span><br><br>
+
+					</div>
+				<!-- </div> -->
+			</form>
+			</div>
+			<div class="sss" id="tdtd4">
+				<p class="didian"></p>
+				<div>
+					<form action="form_action.asp" name="from3" method="get">
+                        <div class="cate">
+                            
+                            <input style="margin-top: 0.05;" type="checkbox" onclick="test()" name="vehicle" value="社招"/>
+                            <span style="font-size: 1vw;margin-left: 1vw;">社招</span>
+
+                            
+                            <input style="margin-left: 10vw;margin-top: 0.05;" onclick="test()" type="checkbox" name="vehicle" value="实习生" />
+                            <span style="font-size: 1vw;margin-left: 1vw;">实习生</span>
+
+                            
+                            <input style="margin-left: 10vw;margin-top: 0.05;" onclick="test()" type="checkbox" name="vehicle" value="校招" />
+                            <span style="font-size: 1vw;margin-left: 1vw;">校招</span>
+                        </div>
+						
+
+					</form>	
+				</div>
+			</div>
+        </div>
+	</div>
+        <div onclick="clears()" class="clear">
+            清除所有筛选方式
+        </div>  
+
+</div>
+<div>
+    <table id="tabless" class="tablesn">
+
+
+    </table>
+</div>
+<p class="scrach_xcx" style=" margin-top: 80px;">
+    即刻搜索&nbsp;&nbsp;&nbsp;&nbsp;    小程序
+</p>
+<div style="margin-top: 30px;text-align: center;">
+    <img width="100px" height="100px" src="./img/index/xcx_scan.png" alt="">
+</div>
+<style>
+    #tabless tr td{
+        width: 16.9vw;    
+        height: 70px;
+        line-height: 4vw;
+        border-bottom: #000 1px solid;
+        padding-left: 2vw;
+        position: relative;
+        top: 0;
+        z-index: 1;
+        
+        
+    }
+    
+    #tabless tr th{
+        background-color: #D2D2D2;
+        width: 16.9vw;
+        height: 70px;
+        padding-left: 2vw;
+        font-size: 1.2vw;
+    }
+    
+    .tablesn{
+        margin-left: 9.8vw;margin-top: 5%;
+        border: #000 1px solid;
+    }
+    .tdlist:hover{  
+        background-color: rgba(0,47,167,0.2);
+
+    }
+    .td_shu{
+        width: 3%;height:100%;background-color: #FFFFFF;float: left;;position: relative;right: 2vw;
+    }
+    .tdlist:hover .td_shu{
+        background-color: #002FA7;
+    }
+</style>
+
+<script>
+        var list = [
+            {'position':'销售助理实习生','class':'销售运营部门','site':'上海','work':'社招','start_time':'20-05-25','href':'./post_detail.html'},
+            {'position':'人力资源','class':'人力资源','site':'北京','work':'社招','start_time':'20-05-25','href':'./post_detail.html'},
+            {'position':'销售助理实习生','class':'销售运营部门','site':'深圳','work':'社招','start_time':'20-05-25','href':'./post_detail.html'},
+            {'position':'设计师','class':'销售运营部门','site':'china','work':'社招','start_time':'20-05-25','href':'./post_detail.html'}
+        ]
+        
+        var oUl = document.getElementsByClassName('tablesn')[0];
+        var count = document.getElementsByClassName('didian');
+        function renderPage(data) {
+            for(var i= 0;i<=count.length-1;i++){
+                count[i].innerHTML = data.length+'<span>已找到职位数量</span>'
+            }
+            oUl.innerHTML = "<tr><th>职位</th><th>部门类别</th><th>工作地点</th><th>工作类别</th><th>发布时间</th></tr>";
+            data.forEach(function (ele, index, self) {
+                oUl.innerHTML += '<tr class="tdlist" onclick="opens(\''+ele.href+'\')"><td class=""><div class="td_shu"></div>'+ele.position+'</td><td>'+ele.class+'</td><td>&nbsp;&nbsp;&nbsp;&nbsp;'+ele.site+'</td><td style="">&nbsp;&nbsp;&nbsp;&nbsp;'+ele.work+'</td><td>'+ele.start_time+'</td></tr>'
+            });
+        }
+        // renderPage(list);  
+        function search(){
+            var lists = []
+            var kword =document.getElementById("key-word").value;
+            if (kword){
+                document.getElementById("checkobox1").style.display='block'
+                document.getElementById('click_shu1').style.right='6.8vw'
+            }else{
+                document.getElementById("checkobox1").style.display='none'
+                document.getElementById('click_shu1').style.right='7.1vw'
+            }
+            // $('#publish_time,#expire_time')
+            for(i = 0; i < list.length; i++){
+                var str = list[i].class+list[i].position+list[i].site
+                console.log(str.indexOf(kword)); // true
+                if(str.indexOf(kword)  != -1){
+                    lists.push(list[i])
+                    renderPage(lists);
+
+                }
+
+            }
+        }
+
+    
+    function td(id){
+        for(i = 0; i < 4; i++){
+            if (id == (i+1)){
+                document.getElementById('tdtd'+(i+1)).style.display='block'
+                // document.getElementById('bg'+(i+1)).style.display='block'  
+                document.getElementById('td'+(i+1)).style.backgroundColor='rgba(0,47,167,0.2)'
+                // background-color: rgba(0,47,167,0.2);
+                document.getElementById('click_shu'+(i+1)).style.display='inline-block'
+                
+            }else{
+                document.getElementById('tdtd'+(i+1)).style.display='none'
+                // document.getElementById('bg'+(i+1)).style.display='none'  
+                document.getElementById('td'+(i+1)).style.backgroundColor='#FFFFFF'
+                document.getElementById('td'+(i+1)).style.borderRight='1px solid  #DCDCDC'
+                document.getElementById('click_shu'+(i+1)).style.display='none'
+            }
+        }
+    } 
+
+
+    function opens(url){
+        window.open(url)
+    }
+    function clears(){
+        var els=document.getElementsByName("vehicle");
+        document.getElementById("key-word").value=''
+        var dian=document.getElementsByClassName("checkbox_true");
+        var len=els.length;
+        for(var i=0;i<len;i++){;
+            els[i].checked = false
+        }
+        for(var j=0;j<dian.length;j++){
+            document.getElementById('checkobox'+(j+1)).style.display='none'
+        }
+    }
+    function test(){
+        var lists = []
+        // debugger;
+            // 获取所有的复选框元素
+        var obj1 = document.testForm.vehicle;
+        var ids = [];
+        for(i = 0; i< obj1.length; i++){
+            if(obj1[i].checked){
+                ids.push(obj1[i].value)
+            }
+        }
+        
+        var obj2 = document.from2.vehicle;
+        var ids2 = [];
+        for(i = 0; i< obj2.length; i++){
+            if(obj2[i].checked){
+                ids2.push(obj2[i].value)
+            }
+        }
+    
+        var obj3 = document.from3.vehicle;
+        var ids3 = [];
+        for(i = 0; i< obj3.length; i++){
+            if(obj3[i].checked){
+                ids3.push(obj3[i].value)
+            }
+        }
+        function isInArray(ids,value){
+            for(var i = 0; i < ids.length; i++){
+                if(value === ids[i]){
+                    return true;
+                }
+            }
+            return false;
+        }
+        for(var i = 0; i < list.length; i++){
+            if(isInArray(ids,list[i].site) == true){
+                lists.push(list[i])
+            }
+        }
+
+        for(var i = 0; i < list.length; i++){
+            if(isInArray(ids2,list[i].class) == true){
+                lists.push(list[i])
+            }
+        }
+        for(var i = 0; i < list.length; i++){
+            if(isInArray(ids3,list[i].work) == true){
+                lists.push(list[i])
+            }
+        }
+        if (ids.length != 0){
+            document.getElementById("checkobox2").style.display='block'
+            document.getElementById('click_shu2').style.right='6.8vw'
+        }else{
+            document.getElementById("checkobox2").style.display='none'
+            document.getElementById('click_shu2').style.right='7.1vw'
+        }
+        if (ids2.length != 0){
+            console.log(ids2.length)
+            document.getElementById("checkobox3").style.display='block'
+            document.getElementById('click_shu3').style.right='6.8vw'
+        }else{
+            document.getElementById("checkobox3").style.display='none'
+            document.getElementById('click_shu3').style.right='7.1vw'
+        }
+        if (ids3.length != 0){
+            document.getElementById("checkobox4").style.display='block'
+            document.getElementById('click_shu4').style.right='6.8vw'
+        }else{
+            document.getElementById("checkobox4").style.display='none'
+            document.getElementById('click_shu4').style.right='7.1vw'
+        }
+        renderPage(lists);
+
+   }
+
+    function getElementsByClassName(n) {
+        var classElements = [], allElements = document.getElementsByTagName('*');
+        for (var i = 0; i < allElements.length; i++) {
+            if (allElements[i].className == n) {
+                classElements[classElements.length] = allElements[i];
+            }
+        }
+        return classElements;
+    }
+    function init() {
+        // 获取屏幕高度
+        var windowHeight = $(window).height();
+        var redClassElements = getElementsByClassName('item');
+        for (var i = 0; i < redClassElements.length; i++) {
+//            redClassElements[i].style.height = windowHeight - 80 + "px";
+            redClassElements[i].style.height = windowHeight ;
+        }
+        renderPage(list);
+    }
+    window.onload = init;
+    $(function () {
+        var ItemClass = getElementsByClassName('item');
+        function resize() {
+            // 获取屏幕宽度
+            var windowWidth = $(window).width();
+            // 判断屏幕属于大还是小
+            var isSmallScreen = windowWidth < 768;
+            // 根据大小为界面上的每一张轮播图设置背景
+            for (var i = 0; i < ItemClass.length; i++) {
+                if (isSmallScreen) {
+//                        console.log(ItemClass[i].css())
+                    ItemClass[i].src = "img/kakuka/recuit2.jpg";
+                } else {
+                    ItemClass[i].src = "img/kakuka/recuit2.jpg";
+                }
+            }
+        }
+
+        $(window).on('resize', resize).trigger('resize');
+    });
+</script> 
+
+
+
+<div style="float: left;">
+    <ul  id="menu">
+        <li><a>© 2020</a></li>
+        <li><a>上海咔酷咔新能源科技有限公司</a></li>
+        <li><a>产品介绍</a></li>
+        <li><a>解决方案</a></li>		
+        <li><a>关于我们</a></li>		
+    </ul>
+</div>
+
+
+<nav>
+    <ul>
+      <li><a href="#target_1"><img class="click_icon" src="./img/index/weixin.png" alt=""></a>
+        <ul class="li1" id="target_1">
+            <li class="nav_ul_ul_li1"><a href="#"><img class="scan_scan" src="./img/index/xcx_scan.png" alt=""></a></li>
+        </ul>
+    </li>
+    <li><a href="#target_2"><img class="click_icon" src="./img/index/gmail.png" alt=""></a>
+        <ul class="li2" id="target_2">
+            <li class="nav_ul_ul_li2"><a href="#">info@kakuka.com.cn</a></li>
+        </ul>
+
+    </li>
+    <li><a href="#target_3"><img class="click_icon" src="./img/index/iphone.png" alt=""></a>
+        <ul  class="li3" id="target_3">
+            <li  class="nav_ul_ul_li3">
+                <a href="#">021-6048-3977</a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+</nav>  
+
+
+
+<hr>
+<div class="footer-f">Copright © 2016-2018 咔酷咔新能源 - 版权所有 <a href="http://www.beian.miit.gov.cn" style="color:#C4C5C9">沪ICP备16030588号</a></div>
+
+</body>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script src="js/scroll.js"></script>
+<!-- <script type="text/javascript">
+
+</script> -->
+</html>

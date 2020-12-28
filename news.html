@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>上海咔酷咔新能源</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/amazeui.css"/>
+	<link rel="shortcut icon" href="img/kakuka_1.ico" type="iimg/kakuka"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<style>
+		.Information li {
+			 margin:10px;
+		}
+		#page_navigation {
+			margin-top: 69px;
+			margin-bottom: 100px;
+		}
+		#page_navigation a{
+			padding:7px;
+			border:1px solid #ddd;
+			color:black;
+			text-decoration:none
+		}
+		#page_navigation .previous_link {
+			margin-right: 20px;
+		}
+		#page_navigation>.page_link {
+			padding:7px 12px;
+			margin-right: 20px;
+		}
+		.active_page{
+			/*background:#ddd;*/
+			/*color:white !important;*/
+			border:1px solid #000 !important;
+		}
+	</style>
+
+		</head>
+<body>
+    <header class=" header" >
+        <div class="am-container-1">
+            <div class="left hw-logo">
+                <a href="./index2.html">
+                    <img id="logo" class="logo" src="img/logo_normal.png">
+                </a>
+                <!--<img class=" logo" src="img/HENGWANG.png"></img>-->
+                <!--<img class="word" src="img/hw-word.png"></img>-->
+            </div>
+            <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+                    data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+                    class="am-icon-bars"></span></button>
+    
+            <div class="am-collapse am-topbar-collapse left" id="doc-topbar-collapse">
+                <div class=" am-topbar-left am-form-inline am-topbar-right" role="search">
+                    <ul class="am-nav am-nav-pills am-topbar-nav hw-menu">
+                        <!-- <li><a href="index2.html">首页</a></li> -->
+                        <li class="menu-active">
+                            <div class="am-dropdown">
+                                <a href="#" class=" am-dropdown-toggle">产品介绍</a>
+                                <ul class="am-dropdown-content">
+                                    <li><a href="product_datail11.html">智能交流壁挂式</a></li>
+                                    <li><a href="product_detail44.html">智能直流充电桩</a></li>
+                                    <li><a href="product_system.html">AI能源操作系统DyOS</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-active">
+                            <div class="am-dropdown">
+                                <a href="#" class=" am-dropdown-toggle">能源数字化</a>
+                                <ul class="am-dropdown-content">
+                                    <li><a href="solutions1.html">城市级解决方案</a></li>
+                                    <li><a href="solutions2.html">停车场配套</a></li>
+                                    <li><a href="solutions3.html">新能源汽车配套</a></li>
+                                    <li><a href="solutions4.html">交通系统</a></li>
+                                    <!-- <li><a href="solutions.html#solutions-1">物流园运营</a></li> -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="https://wx.kakuka.com.cn/admin/login/" target="view_window">管理平台 </a></li>
+                        <li><a href="https://wx.kakuka.com.cn/admin/login/?ticket_system=1" target="view_window">工单系统 </a></li>
+                        <li class="menu-active">
+                            <div class="am-dropdown">
+                                <a href="myinfo.html" class=" am-dropdown-toggle">咔酷咔</a>
+                                <ul class="am-dropdown-content">
+                                    <li><a href="myinfo.html">关于我们</a></li>
+                                    <li><a href="recruit2.html">加入我们</a></li>
+                                    <li><a href="news2.html">新闻</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+<script>
+    (function(){
+        pos = 0;
+        ticking = false;
+        var header = document.querySelector(".header");
+        window.addEventListener("scroll", function(e){
+            pos = window.scrollY;
+
+            if(pos > 100&&!ticking){
+                header.classList.add("scrolledDown");
+//                logo.src = "img/logo_normal.png";
+                $("#logo").attr("src", "img/logo_normal.png");
+                ticking = true;
+            }
+            if(pos < 100 && ticking){
+                header.classList.remove("scrolledDown");
+//                logo.src = "img/logo_white.png";
+                $("#logo").attr("src", "img/logo_white.png");
+                ticking = false;
+            }
+        });
+    })();
+</script>
+<div class="rollpic">
+	<div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'>
+		<ul class="am-slides">
+			<li><img class="item"/></li>
+			<!--<li><img class="item"/></li>-->
+			<!--<li><img class="item"/></li>-->
+
+			<!--<li><img class="item"/></li>-->
+		</ul>
+	</div>
+</div>
+<script>
+    function getElementsByClassName(n) {
+        var classElements = [], allElements = document.getElementsByTagName('*');
+        for (var i = 0; i < allElements.length; i++) {
+            if (allElements[i].className == n) {
+                classElements[classElements.length] = allElements[i];
+            }
+        }
+        return classElements;
+    }
+    function init() {
+        // 获取屏幕高度
+        var windowHeight = $(window).height();
+        var redClassElements = getElementsByClassName('item');
+        for (var i = 0; i < redClassElements.length; i++) {
+//            redClassElements[i].style.height = windowHeight - 80 + "px";
+            redClassElements[i].style.height = auto ;
+        }
+//        var a=document.getElementsByClassName("item");
+////        a.style.width="100%";
+//
+//        a.style.height=
+//        console.log(windowHeight)
+    }
+    window.onload = init;
+    $(function () {
+        var ItemClass = getElementsByClassName('item');
+
+        /**
+         * 根据屏幕宽度的变化决定轮播图片应该展示什么 5    */
+        function resize() {
+            // 获取屏幕宽度
+            var windowWidth = $(window).width();
+            // 判断屏幕属于大还是小
+            var isSmallScreen = windowWidth < 768;
+            // 根据大小为界面上的每一张轮播图设置背景
+            for (var i = 0; i < ItemClass.length; i++) {
+                if (isSmallScreen) {
+//                        console.log(ItemClass[i].css())
+                    ItemClass[i].src = "img/banner_news.jpg";
+                } else {
+                    ItemClass[i].src = "img/banner_news.jpg";
+                }
+            }
+//                $('.rollpic > .am-slides > .item').each(function (i, item) {
+//                    var $item = $(item);
+//                    // var imgSrc = $item.data(isSmallScreen ? 'image-xs' : 'image-lg');
+//                    var imgSrc =
+//                        isSmallScreen ? $item.data('image-xs') : $item.data('image-lg');
+//                    // 设置背景图片
+//                    $item.css('backgroundImage', 'url("' + imgSrc + '")');
+//                    //
+//                    // 因为我们需要小图时 尺寸等比例变化，所以小图时我们使用img方式
+//                    if (isSmallScreen) {
+//                        $item.html('<img src="' + imgSrc + '" alt="" />');
+//                    } else {
+//                        $item.empty();
+//                    }
+//                });
+        }
+
+        // // 让window对象立即触发一下resize，初始化div的背景图
+        // $(window).trigger('resize');
+        $(window).on('resize', resize).trigger('resize');
+    });
+</script>
+
+<!--新闻动态-->
+<div class=" news-all">
+	<div class="am-container-1">
+		<div class="news part-all">
+			<div class="part-title" style="margin-bottom: 80px">
+				<a>
+					<span class="part-title-span">新闻中心</span>
+					<p>Company  News</p>
+				</a>
+			</div>
+			<div class="news-content Information clear company-news">
+				<input type='hidden' id='current_page'/>
+				<input type='hidden' id='show_per_page'/>
+				<ul  id="content">
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">喜讯！咔酷咔入围2020年第二批拟入库科技型中小企业</span>
+							<p class="right-words">上海市2020年第二批拟入库科技型中小企业名单已公示...</p>
+							<a href="new28.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">咔酷咔云平台全面支持储能</span>
+							<p class="right-words">2019年，受《输配电定价成本监审办法》等...</p>
+							<a href="new27.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">咔酷咔携手京东物流集团，构建电动汽车美好充电体验全生态</span>
+							<p class="right-words">2月10日，上海咔酷咔新能源科技有限公司...</p>
+							<a href="new26.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">咔酷咔祝贺同济大学翼驰车队荣获中国大学生方程式汽车大赛总冠军</span>
+							<p class="right-words">上海咔酷咔新能源科技有限公司作为...</p>
+							<a href="new25.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">厉害了！咔酷咔创始人刘博士入选上海科技专家库</span>
+							<p class="right-words">为加快建设具有全球影响力的科技创新中心...</p>
+							<a href="new24.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">【喜报】热烈祝贺我司荣获2019第四届上海•杨浦创业之星大赛“创业优胜奖”</span>
+							<p class="right-words">上海咔酷咔新能源科技有限公司是国内领先的新能源汽车领域充...</p>
+							<a href="new23.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">咔酷咔入驻第一批创业加速营企业</span>
+							<p class="right-words">近日，本公司正式成为由上海电气集团中央研究院主办...</p>
+							<a href="new22.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">咔酷咔入驻杨浦区博士后创新实践基地</span>
+							<p class="right-words">近日，咔酷咔新能源成为”杨浦区博士...</p>
+							<a href="new21.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">咔酷咔与Hubject达成战略合作</span>
+							<p class="right-words">2019年5月，上海咔酷咔新能源与Hubject...</p>
+							<a href="new20.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">公司与上海城建职业学院达成合作</span>
+							<p class="right-words">习近平要求把加快发展现代职业教育摆在更加突出的位置...</p>
+							<a href="new19.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">公司受邀访问星星充电</span>
+							<p class="right-words">2019-4-25日，公司受邀访问星星充电，参观了星星充电的展厅...</p>
+							<a href="new18.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">热烈祝贺我公司获得“国家级高新技术企业证书”</span>
+							<p class="right-words">近日，咔酷咔新能源获得由上海市科学技术委员会...</p>
+							<a href="new17.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">咔酷咔新能源支持互联互通</span>
+							<p class="right-words">上海咔酷咔新能源科技有限公司支持新能源汽车充电服务互联互通。..</p>
+							<a href="new16.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">公司荣获“优胜企业奖”荣誉</span>
+							<p class="right-words">2018年10月30日，以‘打造“双创”生态升级版’为主题的2018浦江创新论坛、创业者论坛于上海科技馆隆重召开...</p>
+							<a href="new14.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">公司获2018年度上海市科技型中小企业技术创新资金支持</span>
+							<p class="right-words">经公开自主申报、各区科技主管部门推荐、“创业在上海”国际创新创业大赛市赛评选等程序，公司凭借“用于机械式立体车...</p>
+							<a href="new14.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">公司入驻成为杨浦区博士后创新实践基地企业</span>
+							<p class="right-words">2018年杨浦区博士后创新实践基地科研项目立项名单出炉，经过49家企业的52个科研项目参与角逐，上海咔酷咔新能源科技有限...</p>
+							<a href="new13.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">公司智能交流、直流产品成为上海市高新技术成果转化项目</span>
+							<p class="right-words">2018年4月17日，依据《关于进一步促进科技成果转移转化的实施意见》（沪府办发〔2015〕46号）和《上海市高新技术成...</p>
+							<a href="new12.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">公司喜获“科技型中小企业”荣誉称号</span>
+							<p class="right-words">2018年3月23日，根据科技部、财政部、国家税务总局《科技型中小企业评价办法》（国科发政〔2017〕115号）、科技部...</p>
+							<a href="new11.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">咔酷咔通过国网认证</span>
+							<p class="right-words">2018年1月，在经过一个月严格的各项检测之后，上海咔酷咔新能源科技有限公司自主设计研发的智能交流、直流充电产品顺利...</p>
+							<a href="new1.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">咔酷咔&南京工程学院强强合作签订战略合作协议</span>
+							<p class="right-words">11月30日上午，上海咔酷咔新能源科技有限公司与南京工程学院汽车与轨道交通学院战略合作签约仪式举行，双方就校企合作...</p>
+							<a href="new2.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">咔酷咔助力同济翼驰车队冲击世界顶峰</span>
+							<p class="right-words">在8月8日-13日举行的德国大学生方程式汽车大赛（Formula Student Germany，简称FSG，为该领域世界顶级赛事）中...</p>
+							<a href="new3.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">公司与浙江省邮电工程建设有限公司达成合作</span>
+							<p class="right-words">上海咔酷咔新能源科技有限公司与浙江省邮电工程建设有限公司签署协议，双方将在建筑智能化系统集成、广电工程、电力工程...</p>
+							<a href="new5.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">荣获2016上海最具投资潜力50佳创业企业</span>
+							<p class="right-words">上海咔酷咔新能源科技有限公司荣获2016年度上海最具投资潜力50佳创业企业。该评选活动由上海市中小企业发展服务中心...</p>
+							<a href="new7.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">上海市杨浦区国家级海外高层次人才创新创业基地“3310”计划</span>
+							<p class="right-words">我们咔酷咔新能源科技有限公司获得由上海市杨浦区国家级海外高层次人才创新创业基地“3310”计划 2015年度的重大投资...</p>
+							<a href="new8.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<li class="am-u-lg-12 am-u-sm-12 am-u-md-12">
+						<div class="left am-fl">
+							<img src="img/product_wall1.jpg"></img>
+						</div>
+						<div class="right am-fr">
+							<span class="right-title">公司知识产权进展迅速</span>
+							<p class="right-words">作为新能源汽车能源行业的高科技创新公司，公司自成立以来，知识产权进展迅速，共申请注册商标1项、发明专利5项...</p>
+							<a href="new9.html" target="_blank" class="am-fr"><span>查看详情</span><i class="am-icon-angle-double-right"></i></a>
+						</div>
+						<div class="yuan">
+						</div>
+					</li>
+					<div class="clear"></div>
+				</ul>
+				<div class="clear"></div>
+				<div id='page_navigation' class="col-md-8 col-md-offset-2"><div class="clear"></div></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        //每页显示的数目
+        var show_per_page = 6;
+        //获取content对象里面，数据的数量
+        var number_of_items = $('#content').children().size();
+        //计算页面显示的数量
+        var number_of_pages = Math.ceil(number_of_items/show_per_page);
+        //隐藏域默认值
+        $('#current_page').val(0);
+        $('#show_per_page').val(show_per_page);
+        var navigation_html = '<a class="previous_link" href="javascript:previous();">上一页</a>';
+        var current_link = 0;
+        while(number_of_pages > current_link){
+            navigation_html += '<a class="page_link" href="javascript:go_to_page(' + current_link +')" longdesc="' + current_link +'">'+ (current_link + 1) +'</a>';
+            current_link++;
+        }
+        navigation_html += '<a class="next_link" href="javascript:next();">下一页</a>';
+        $('#page_navigation').html(navigation_html);
+        //add active_page class to the first page link
+        $('#page_navigation .page_link:first').addClass('active_page');
+        //隐藏该对象下面的所有子元素
+        $('#content').children().css('display', 'none');
+        //显示第n（show_per_page）元素
+        $('#content').children().slice(0, show_per_page).css('display', 'block');
+    });
+    //上一页
+    function previous(){
+        new_page = parseInt($('#current_page').val()) - 1;
+        //if there is an item before the current active link run the function
+        if($('.active_page').prev('.page_link').length==true){
+            go_to_page(new_page);
+        }
+    }
+    //下一页
+    function next(){
+        new_page = parseInt($('#current_page').val()) + 1;
+        //if there is an item after the current active link run the function
+        if($('.active_page').next('.page_link').length==true){
+            go_to_page(new_page);
+        }
+    }
+    //跳转某一页
+    function go_to_page(page_num){
+        //get the number of items shown per page
+        var show_per_page = parseInt($('#show_per_page').val());
+        //get the element number where to start the slice from
+        start_from = page_num * show_per_page;
+        //get the element number where to end the slice
+        end_on = start_from + show_per_page;
+        //hide all children elements of content div, get specific items and show them
+        $('#content').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
+		/*get the page link that has longdesc attribute of the current page and add active_page class to it
+		 and remove that class from previously active page link*/
+        $('.page_link[longdesc=' + page_num +']').addClass('active_page').siblings('.active_page').removeClass('active_page');
+        //update the current page input field
+        $('#current_page').val(page_num);
+    }
+</script>
+
+<!--联系我们-->
+<div class="am-container-1">
+	<div class="part-title">
+		<a name="about-5">
+			<span class="part-title-span">联系我们</span>
+			<p>Contact Us</p>
+		</a>
+	</div>
+	<div class="solutions part-all Contact">
+		<ul class="am-g part-content solutions-content" style="margin-top: 80px">
+			<li class="am-u-sm-6 am-u-md-6 am-u-lg-3">
+				<div class=" solution-circle white">
+					<img src="img/icon_position.png" alt="">
+				</div>
+				<div class="solution-word first-solution-word">
+					<span class="">公司地址</span>
+					<p class="us-way">上海市杨浦区黄兴路221号c3栋207</p>
+				</div>
+			</li>
+			<li class="am-u-sm-6 am-u-md-6 am-u-lg-3">
+				<div class=" solution-circle white">
+					<img src="img/icon_email.png" alt="">
+				</div>
+				<div class="solution-word">
+					<span class="">公司邮箱</span>
+					<p class="us-way">info@kakuka.com.cn</p>
+				</div>
+			</li>
+			<li class="am-u-sm-6 am-u-md-6 am-u-lg-3">
+				<div class=" solution-circle white">
+					<img src="img/icon_call.png" alt="">
+				</div>
+				<div class="solution-word solution-word-three">
+					<span class="">公司电话</span>
+					<p class="us-way">021-6048 3977</p>
+				</div>
+			</li>
+			<li class="am-u-sm-6 am-u-md-6 am-u-lg-3">
+				<div class=" solution-circle white">
+					<img src="img/icon_code.png" alt="">
+				</div>
+				<div class="solution-word">
+					<span class="">公司邮编</span>
+					<p class="us-way">200434</p>
+				</div>
+			</li>
+		</ul>
+		<div class="contact-footer">
+			<div class="contact-footer-first">
+				<span><i></i>第一时间接听您的来电<i></i></span>
+
+			</div>
+			<p class="">认真、耐心、专业的咔酷咔团队为您解决问题！</p>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="am-container-1">
+		<ul class="am-fl am-u-lg-6 am-u-md-12 am-u-sm-12">
+			<li class="am-u-lg-4 am-u-md-4 am-u-sm-12 part-5-li2">
+				<div class="part-5-title">产品介绍</div>
+				<div class="part-5-words2">
+					<span><a href="product-details1.html">智能交流壁挂式</a></span>
+					<span><a href="product-details2.html">智能交流落地式</a></span>
+					<span><a href="product-details4.html">智能直流充电桩</a></span>
+					<span><a href="product-show.html#product-1">无线充电</a></span>
+					<span><a href="product-show.html#product-2">云平台</a></span>
+				</div>
+			</li>
+			<li class="am-u-lg-4 am-u-md-4 am-u-sm-12 part-5-li2">
+				<div class="part-5-title">解决方案</div>
+				<div class="part-5-words2">
+					<span><a href="solutions.html#solutions-1">物流园运营</a></span>
+					<span><a href="solutions.html#solutions-2">交通系统</a></span>
+					<span><a href="solutions.html#solutions-3">停车场配套</a></span>
+					<span><a href="solutions.html#solutions-4">新能源汽车配套</a></span>
+					<span><a href="solutions.html#solutions-5">城市级解决方案</a></span>
+					<span><a href="solutions.html#solutions-6">立体车库智能充电</a></span>
+				</div>
+			</li>
+			<li class="am-u-lg-4 am-u-md-4 am-u-sm-12 part-5-li2">
+				<div class="part-5-title">关于我们</div>
+				<div class="part-5-words2">
+					<span><a href="about-us.html#about-1">公司介绍</a></span>
+					<!--<span><a href="about-us.html#about-2">发展历程</a></span>-->
+					<span><a href="about-us.html#about-3">公司动态</a></span>
+					<!--<span><a href="about-us.html#about-4">团队介绍</a></span>-->
+					<span><a href="about-us.html#about-5">联系方式</a></span>
+				</div>
+			</li>
+		</ul>
+		<ul class="erweima am-fr am-u-lg-6 am-u-md-12 am-u-sm-12">
+			<li class="am-u-lg-4 am-u-md-4 am-u-sm-12 part-5-li2">
+				<div>
+					<img src="img/zhifubao.jpg" alt="">
+				</div>
+				<span class="erweima-title">支付宝小程序</span>
+			</li>
+			<li class="am-u-lg-4 am-u-md-4 am-u-sm-12 part-5-li2">
+				<div>
+					<img src="img/weixin.jpg" alt="">
+				</div>
+				<span class="erweima-title">微信公众号</span>
+			</li>
+			<li class="am-u-lg-4 am-u-md-4 am-u-sm-12 part-5-li2">
+				<div>
+					<img src="img/xiaochengxu.jpg" alt="">
+				</div>
+				<span class="erweima-title">微信小程序</span>
+			</li>
+		</ul>
+		<div class="clear"></div>
+		<div class="footer-f">Copright © 2016-2018 咔酷咔新能源 - 版权所有 沪ICP备16030588号</div>
+	</div>
+</footer>
+<div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+	<a href="#top" title="" style="color: #000;">
+		<!--<i class="am-gotop-icon am-icon-arrow-circle-up"></i>-->
+		<!--<img class="am-gotop-icon-custom" src="img/top.png" />-->
+		<div class="am-gotop-icon-custom">
+			<div></div>
+		</div>
+		<p>回到顶部</p>
+	</a>
+</div>
+</body>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script src="js/scroll.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>

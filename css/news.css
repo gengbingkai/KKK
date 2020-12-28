@@ -1,0 +1,75 @@
+.divss{
+    width: 30%;
+    height: 500px;
+    float: left;
+    margin-left: 2.5vw;
+}
+.div_font{
+    margin-top: 30px;
+    width: 100%;
+    font-size: 1.5vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+    line-height: 39px;
+}
+.div_time{
+    font-size: 1.2vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #999999;
+    line-height: 39px;
+}
+.bgc_div{
+    width: 186px;
+    height: 2px;
+    background: #002FA7;
+}
+.title_1{
+    /* padding-left: 400px; */
+    padding-top: 3vw;
+    font-size: 3vw;
+    font-weight: 400;
+    color: #000000;
+    line-height: 82px;
+}
+.datetime1{
+    padding-top: 1.3vw;
+    /* padding-left: 400px; */
+    font-size: 1vw;
+    font-weight: 400;
+    color: #999999;
+    line-height: 39px;
+}
+.content1{
+    width: 53vw;
+    padding-top: 1vw;
+    font-size: 1vw;
+    font-family: Microsoft YaHei;
+    color: #000000;
+    line-height: 42px;
+}
+.content{
+    width: 58vw;
+    padding-top: 1vw;
+    font-size: 1vw;
+    font-family: Microsoft YaHei;
+    color: #000000;
+    line-height: 2vw;
+}
+.iimage_new{
+    width: 58vw;
+    height: 35vw;
+}
+
+.nice li{
+    list-style: disc;
+}
+.lll{
+    
+    padding-left: 26.5vw;
+    font-size: 1vw;
+    font-family: Microsoft YaHei;
+    color: #000000;
+    line-height: 42px;
+}

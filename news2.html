@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>上海咔酷咔新能源</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/amazeui.css"/>
+	<link rel="shortcut icon" href="img/kakuka_1.ico" type="iimg/kakuka"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/index2.css"/>
+	<link rel="stylesheet" href="css/news.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<style>
+		.Information li {
+			 margin:10px;
+		}
+		#page_navigation {
+			margin-top: 69px;
+            margin-bottom: 100px;
+		}
+		#page_navigation a{
+			padding:10px 30px;
+            border:1px solid #000;
+            
+            background: #E5E5E5;
+			color:black;
+			text-decoration:none
+        }
+        #page_navigation a:hover{
+            color: #FFFFFF;
+            background: #000;
+		}
+		#page_navigation .previous_link {
+            margin-left: 40px;
+            float: left;
+        }
+        #page_navigation .next_link {
+            margin-right: 40px;
+            float: right;
+		}
+		#page_navigation>.page_link {
+			padding:7px 12px;
+			margin-right: 20px;
+		}
+		.active_page{
+			/*background:#ddd;*/
+			/*color:white !important;*/
+			border:1px solid #000 !important;
+		}
+	</style>
+
+		</head>
+<body>
+    <header class="header" >
+        <div>
+            <div style="width: 15%;float: left;">
+                <a href="./index2.html">
+                    <img class="logo" src="./img/kakuka/KKK_logo.png" alt="">
+                </a>
+            </div>
+            <ul class="ul1 clearfix">
+                <li><a href="./solution.html"><span>能源数字化</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./solutions1.html"><span>城市级解决方案</span></a></li>
+                        <li><a><span>AI智慧化运营</span></a></li>
+                        <li><a href="./solutions2.html"><span>停车场配套</span></a></li>
+                        <li><a href="./solutions4.html"><span>光储充检停</span></a></li>
+                        <li><a href="./solutions3.html"><span>新能源汽车配套</span></a></li>  
+                        <li><a><span>咨询服务</span></a></li>  
+                    </ul>	
+                </li>
+                <li><a href="./product.html"><span>产品介绍</span></a>
+                    <ul class="clearfix">
+                        <li><a href="./product_system.html"><span>AI能源操作系统DyOS</span></a></li>
+                        <li><a href="./product_orderos.html"><span>智慧化工单系统</span></a></li>
+                        <li><a><span>有序充电制单元</span></a></li>
+                        <li><a href="./product_datail11.html"><span>智能交流壁挂式</span></a></li>
+                        <li><a href="./product_detail44.html"><span>智能直流充电桩</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/" target="view_window"><span>管理平台</span></a></li>
+                <li><a href="https://wx.kakuka.com.cn/admin/login/?ticket_system=1" target="view_window"><span>工单系统</span></a></li>
+                <li><a><span>咔酷咔</span></a>
+                    <ul class="clearfix">
+                        <li><a href="recruit2.html"><span>加入我们</span></a></li>
+                        <li><a href="myinfo.html"><span>关于我们</span></a></li>
+                        <li><a href="news2.html"><span>新闻</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+<script>
+	var oUl1 = document.getElementsByTagName("ul")[0];
+	var aLi1 = oUl1.children;
+    var aUl2 = oUl1.getElementsByTagName("ul");
+	for(var i=0;i<aLi1.length;i++){
+		aLi1[i].onmouseover = function(){
+            this.getElementsByTagName("ul")[0].style.display = "block"
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom='2px solid #002FA7'
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom='5px'
+            
+		}
+		aLi1[i].onmouseout = function(){
+			this.getElementsByTagName("ul")[0].style.display = "none";
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.borderBottom=''
+            this.getElementsByTagName("a")[0].getElementsByTagName("span")[0].style.paddingBottom=''
+		}
+	}
+</script>
+
+<script>
+    function getElementsByClassName(n) {
+        var classElements = [], allElements = document.getElementsByTagName('*');
+        for (var i = 0; i < allElements.length; i++) {
+            if (allElements[i].className == n) {
+                classElements[classElements.length] = allElements[i];
+            }
+        }
+        return classElements;
+    }
+    function init() {
+        // 获取屏幕高度
+        var windowHeight = $(window).height();
+        var redClassElements = getElementsByClassName('item');
+        for (var i = 0; i < redClassElements.length; i++) {
+//            redClassElements[i].style.height = windowHeight - 80 + "px";
+            redClassElements[i].style.height = auto ;
+        }
+//        var a=document.getElementsByClassName("item");
+////        a.style.width="100%";
+//
+//        a.style.height=
+//        console.log(windowHeight)
+    }
+    window.onload = init;
+    $(function () {
+        var ItemClass = getElementsByClassName('item');
+
+        /**
+         * 根据屏幕宽度的变化决定轮播图片应该展示什么 5    */
+        function resize() {
+            // 获取屏幕宽度
+            var windowWidth = $(window).width();
+            // 判断屏幕属于大还是小
+            var isSmallScreen = windowWidth < 768;
+            // 根据大小为界面上的每一张轮播图设置背景
+            for (var i = 0; i < ItemClass.length; i++) {
+                if (isSmallScreen) {
+//                        console.log(ItemClass[i].css())
+                    ItemClass[i].src = "img/banner_news.jpg";
+                } else {
+                    ItemClass[i].src = "img/banner_news.jpg";
+                }
+            }
+//                $('.rollpic > .am-slides > .item').each(function (i, item) {
+//                    var $item = $(item);
+//                    // var imgSrc = $item.data(isSmallScreen ? 'image-xs' : 'image-lg');
+//                    var imgSrc =
+//                        isSmallScreen ? $item.data('image-xs') : $item.data('image-lg');
+//                    // 设置背景图片
+//                    $item.css('backgroundImage', 'url("' + imgSrc + '")');
+//                    //
+//                    // 因为我们需要小图时 尺寸等比例变化，所以小图时我们使用img方式
+//                    if (isSmallScreen) {
+//                        $item.html('<img src="' + imgSrc + '" alt="" />');
+//                    } else {
+//                        $item.empty();
+//                    }
+//                });
+        }
+
+        // // 让window对象立即触发一下resize，初始化div的背景图
+        // $(window).trigger('resize');
+        $(window).on('resize', resize).trigger('resize');
+    });
+</script>
+
+<!--新闻动态-->
+<div class=" news-all">
+	<div class="am-container-1">
+		<div class="news part-all">
+			<div class="part-title" style="margin-bottom: 80px;">
+				<a>
+                    <span class="part-title-span">咔酷咔新闻</span>
+                    <div class="bgc_div"></div>
+					<!-- <p>Company  News</p> -->
+				</a>
+			</div>
+			<div class="news-content Information clear company-news">
+				<input type='hidden' id='current_page'/>
+				<input type='hidden' id='show_per_page'/>
+				<ul  id="content">
+                    <div class="divss">
+                        <a href="news01.html">
+                            <div>
+                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="div_font">咔酷咔入围2020年第二批入库科技型中 小企业</div>
+                                <P class="div_time">2020 年 4 月 20 日</P>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="divss">
+                        <a href="news02.html">
+                            <div>
+                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="div_font">咔酷咔云平台全面支持储能</div>
+                                <P class="div_time">2020 年 4 月 1 日</P>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="divss">
+                        <a href="news03.html">
+                            <div>
+                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="div_font">咔酷咔携手京东物流集团，构建电动汽 车美好充电体验全生态</div>
+                                <P class="div_time">2019 年 12 月 19 日</P>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="divss">
+                        <a href="news04.html">
+                            <div>
+                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="div_font">咔酷咔祝贺同济大学翼驰车队荣获中国 大学生方程式汽车大赛总冠军</div>
+                                <P class="div_time">2019 年 12 月 19 日</P>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="divss">
+                        <a href="news05.html">
+                            <div>
+                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="div_font">厉害了！咔酷咔创始人刘博士入选上海 科技专家库</div>
+                                <P class="div_time">2020 年 4 月 20 日</P>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="divss">
+                        <a href="news06.html">
+                            <div>
+                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="div_font">热烈祝贺我司荣获2019第四届上海•杨 浦创业之星大赛“创业优胜奖”  </div>
+                                <P class="div_time">2019 年 11 月 25 日</P>
+                            </div>
+                        </a>
+                    </div>
+
+					<div class="clear"></div>
+				</ul>
+				<div class="clear"></div>
+                <div id='page_navigation' class="col-md-8 col-md-offset-2"><div class="clear"></div></div>
+                <div style="height: 100px;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        //每页显示的数目
+        var show_per_page = 6;
+        //获取content对象里面，数据的数量
+        var number_of_items = $('#content').children().size();
+        console.log(number_of_items)
+        //计算页面显示的数量
+        var number_of_pages = Math.ceil(number_of_items/show_per_page);
+        //隐藏域默认值
+        $('#current_page').val(0);
+        $('#show_per_page').val(show_per_page);
+        var navigation_html = '<a class="previous_link" href="javascript:previous();">上一页</a>';
+        var current_link = 0;
+        while(number_of_pages > current_link){
+            navigation_html += '<a hidden class="page_link" href="javascript:go_to_page(' + current_link +')" longdesc="' + current_link +'">'+ (current_link + 1) +'</a>';
+            current_link++;
+        }
+        navigation_html += '<a class="next_link" href="javascript:next();">下一页</a>';
+        $('#page_navigation').html(navigation_html);
+        //add active_page class to the first page link
+        $('#page_navigation .page_link:first').addClass('active_page');
+        //隐藏该对象下面的所有子元素
+        $('#content').children().css('display', 'none');
+        //显示第n（show_per_page）元素
+        $('#content').children().slice(0, show_per_page).css('display', 'block');
+    });
+    //上一页
+    function previous(){
+        new_page = parseInt($('#current_page').val()) - 1;
+        //if there is an item before the current active link run the function
+        if($('.active_page').prev('.page_link').length==true){
+            go_to_page(new_page);
+        }
+    }
+    //下一页
+    function next(){
+        new_page = parseInt($('#current_page').val()) + 1;
+        //if there is an item after the current active link run the function
+        if($('.active_page').next('.page_link').length==true){
+            go_to_page(new_page);
+        }
+    }
+    //跳转某一页
+    function go_to_page(page_num){
+        //get the number of items shown per page
+        var show_per_page = parseInt($('#show_per_page').val());
+        //get the element number where to start the slice from
+        start_from = page_num * show_per_page;
+        //get the element number where to end the slice
+        end_on = start_from + show_per_page;
+        //hide all children elements of content div, get specific items and show them
+        $('#content').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
+		/*get the page link that has longdesc attribute of the current page and add active_page class to it
+		 and remove that class from previously active page link*/
+        $('.page_link[longdesc=' + page_num +']').addClass('active_page').siblings('.active_page').removeClass('active_page');
+        //update the current page input field
+        $('#current_page').val(page_num);
+    }
+</script>
+
+
+
+<div style="float: left;">
+    <ul  id="menu">
+        <li><a>© 2020</a></li>
+        <li><a>上海咔酷咔新能源科技有限公司</a></li>
+        <li><a>产品介绍</a></li>
+        <li><a>解决方案</a></li>		
+        <li><a>关于我们</a></li>		
+    </ul>
+</div>
+
+
+<nav>
+    <ul>
+      <li><a href="#target_1"><img class="click_icon" src="./img/index/weixin.png" alt=""></a>
+        <ul class="li1" id="target_1">
+            <li class="nav_ul_ul_li1"><a href="#"><img class="scan_scan" src="./img/index/xcx_scan.png" alt=""></a></li>
+        </ul>
+    </li>
+    <li><a href="#target_2"><img class="click_icon" src="./img/index/gmail.png" alt=""></a>
+        <ul class="li2" id="target_2">
+            <li class="nav_ul_ul_li2"><a href="#">info@kakuka.com.cn</a></li>
+        </ul>
+
+    </li>
+    <li><a href="#target_3"><img class="click_icon" src="./img/index/iphone.png" alt=""></a>
+        <ul  class="li3" id="target_3">
+            <li  class="nav_ul_ul_li3">
+                <a href="#">021-6048-3977</a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+</nav>  
+
+<div style="height: 50px;"></div>
+
+<hr>
+<div class="footer-f">Copright © 2016-2018 咔酷咔新能源 - 版权所有 <a href="http://www.beian.miit.gov.cn" style="color:#C4C5C9">沪ICP备16030588号</a></div>
+
+</body>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script src="js/scroll.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>

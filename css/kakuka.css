@@ -1,0 +1,98 @@
+.myinfo{
+    position: absolute;
+    left: 43%;
+    top: 35%;
+    letter-spacing: 2px;
+    font-size: 4vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 51px;
+    z-index: 1;
+}
+
+.kakuka{
+    position: absolute;
+    letter-spacing: 2px;
+    left: 39%;
+    top: 43%;
+    font-size: 4vw;
+    font-family: Adobe Heiti Std;
+    font-weight: normal;
+    color: #FFFFFF;
+    z-index: 1;
+}
+.checkbox_true{
+    width: 0.5vw;height: 0.5vw;float: right;display: none;
+    background: #002FA7;border-radius: 50%;position: relative;left: 3vw;
+}
+.but{
+    position: absolute;
+    left: 42.5%;
+    top: 60%;
+    width: 17vw;
+    height: 3.5vw;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    /*实现水平居中*/
+    justify-content: center;
+    z-index: 1;
+
+}
+.fontt{
+    position: absolute;
+    left: 43%;
+    top: 95%;
+    font-size: 22px;
+    font-family: Adobe Heiti Std;
+    font-weight: normal;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+.font_div{
+    width: 100%;
+    height: 50vw;
+    background: #FFFFFF;
+}
+.font_div_li_left{
+    text-align: center;
+    margin-left: 10%;
+    width: 40%;
+    height: 50%;
+    float: left;
+}
+.scrach_xcx{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.6vw;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #000000;
+    line-height: 17px;
+}
+.font_div_li_right{
+    text-align: center; 
+    margin-right: 10%;
+    width: 40%;
+    height: 50%;
+    float: right;
+}
+.ddddd{
+    font-size: 1.5vw;
+    font-family: Adobe Heiti Std;
+    font-weight: normal;
+    color: #383D3F;
+    display:inline-block;
+    width: 35vw;
+}
+.fffff{
+    padding-top: 100px;
+    font-size: 3vw;
+    font-family: Adobe Heiti Std;
+    font-weight: normal;
+    color: #002FA7;
+}
