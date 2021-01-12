@@ -109,6 +109,7 @@
 		color: #000;
 		line-height: 100px;
         text-align: center; */
+        cursor: pointer;
         
         color: #505356;
     }
@@ -398,6 +399,7 @@ font-size: 0.8vw;
         </div>  
 
 </div>
+<p class="didian" style="left: 45%;font-weight: bold;"></p>
 <div>
     <table id="tabless" class="tablesn">
 
@@ -526,6 +528,7 @@ font-size: 0.8vw;
         for(var j=0;j<dian.length;j++){
             document.getElementById('checkobox'+(j+1)).style.display='none'
         }
+        renderPage(list);  
     }
     function test(){
         var lists = []
