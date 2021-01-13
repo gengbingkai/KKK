@@ -53,7 +53,6 @@
 .content{
     width: 53vw;
     padding-top: 1vw;
-    /* font-size: 1vw; */
     font-family: Microsoft YaHei;
     color: #000000;
     line-height: 25px;
@@ -67,9 +66,7 @@
     list-style: disc;
 }
 .lll{
-    
     padding-left: 26.5vw;
-    /* font-size: 1vw; */
     font-family: Microsoft YaHei;
     color: #000000;
     line-height: 42px;
