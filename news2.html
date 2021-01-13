@@ -186,21 +186,21 @@
 <div class=" news-all">
 	<div class="am-container-1">
 		<div class="news part-all">
-			<div class="part-title" style="margin-bottom: 80px;">
+			<div class="part-title" style="margin-bottom: 80px;padding-left: 10rem;">
 				<a>
                     <span class="part-title-span">咔酷咔新闻</span>
                     <div class="bgc_div"></div>
 					<!-- <p>Company  News</p> -->
 				</a>
 			</div>
-			<div class="news-content Information clear company-news">
+			<div class="news-content Information clear company-news" style="padding-left: 10rem;padding-right: 10rem;">
 				<input type='hidden' id='current_page'/>
 				<input type='hidden' id='show_per_page'/>
 				<ul  id="content">
                     <div class="divss">
                         <a href="news01.html">
                             <div>
-                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                                <img width="100%" height="" src="img/product_wall1.jpg" alt="">
                             </div>
                             <div>
                                 <div class="div_font">咔酷咔入围2020年第二批入库科技型中 小企业</div>
@@ -212,7 +212,7 @@
                     <div class="divss">
                         <a href="news02.html">
                             <div>
-                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                                <img width="100%" height="" src="img/product_wall1.jpg" alt="">
                             </div>
                             <div>
                                 <div class="div_font">咔酷咔云平台全面支持储能</div>
@@ -224,7 +224,7 @@
                     <div class="divss">
                         <a href="news03.html">
                             <div>
-                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                                <img width="100%" height="" src="img/product_wall1.jpg" alt="">
                             </div>
                             <div>
                                 <div class="div_font">咔酷咔携手京东物流集团，构建电动汽 车美好充电体验全生态</div>
@@ -236,7 +236,7 @@
                     <div class="divss">
                         <a href="news04.html">
                             <div>
-                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                                <img width="100%" height="" src="img/product_wall1.jpg" alt="">
                             </div>
                             <div>
                                 <div class="div_font">咔酷咔祝贺同济大学翼驰车队荣获中国 大学生方程式汽车大赛总冠军</div>
@@ -248,7 +248,7 @@
                     <div class="divss">
                         <a href="news05.html">
                             <div>
-                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                                <img width="100%" height="" src="img/product_wall1.jpg" alt="">
                             </div>
                             <div>
                                 <div class="div_font">厉害了！咔酷咔创始人刘博士入选上海 科技专家库</div>
@@ -260,7 +260,18 @@
                     <div class="divss">
                         <a href="news06.html">
                             <div>
-                                <img width="100%" height="326px" src="img/product_wall1.jpg" alt="">
+                                <img width="100%" height="" src="img/product_wall1.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="div_font">热烈祝贺我司荣获2019第四届上海•杨 浦创业之星大赛“创业优胜奖”  </div>
+                                <P class="div_time">2019 年 11 月 25 日</P>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="divss">
+                        <a href="news06.html">
+                            <div>
+                                <img width="100%" height="" src="img/product_wall1.jpg" alt="">
                             </div>
                             <div>
                                 <div class="div_font">热烈祝贺我司荣获2019第四届上海•杨 浦创业之星大赛“创业优胜奖”  </div>
@@ -269,36 +280,38 @@
                         </a>
                     </div>
 
-					<div class="clear"></div>
-				</ul>
-				<div class="clear"></div>
-                <div id='page_navigation' class="col-md-8 col-md-offset-2"><div class="clear"></div></div>
+                </ul>    
+				<div class="clear"></div>            
+                <div style="display: flex;align-items: center;justify-content: center;">
+                    <div onclick="more()" class="butsss">查看更多</div>
+                </div>
+                <!-- <div id='page_navigation' class="col-md-8 col-md-offset-2"><div class="clear"></div></div> -->
                 <div style="height: 100px;"></div>
+
 			</div>
 		</div>
 	</div>
 </div>
 <script type="text/javascript">
 
+    var show_per_page = 6;
     $(document).ready(function(){
         //每页显示的数目
-        var show_per_page = 6;
         //获取content对象里面，数据的数量
         var number_of_items = $('#content').children().size();
-        console.log(number_of_items)
         //计算页面显示的数量
         var number_of_pages = Math.ceil(number_of_items/show_per_page);
         //隐藏域默认值
         $('#current_page').val(0);
         $('#show_per_page').val(show_per_page);
-        var navigation_html = '<a class="previous_link" href="javascript:previous();">上一页</a>';
-        var current_link = 0;
-        while(number_of_pages > current_link){
-            navigation_html += '<a hidden class="page_link" href="javascript:go_to_page(' + current_link +')" longdesc="' + current_link +'">'+ (current_link + 1) +'</a>';
-            current_link++;
-        }
-        navigation_html += '<a class="next_link" href="javascript:next();">下一页</a>';
-        $('#page_navigation').html(navigation_html);
+        // var navigation_html = '<a class="previous_link" href="javascript:previous();">上一页</a>';
+        // var current_link = 0;
+        // while(number_of_pages > current_link){
+        //     navigation_html += '<a hidden class="page_link" href="javascript:go_to_page(' + current_link +')" longdesc="' + current_link +'">'+ (current_link + 1) +'</a>';
+        //     current_link++;
+        // }
+        // navigation_html += '<a class="next_link" href="javascript:next();">下一页</a>';
+        // $('#page_navigation').html(navigation_html);
         //add active_page class to the first page link
         $('#page_navigation .page_link:first').addClass('active_page');
         //隐藏该对象下面的所有子元素
@@ -315,6 +328,33 @@
         }
     }
     //下一页
+
+    function more(){
+        console.log('wfj8');
+        //每页显示的数目
+        show_per_page += 3;
+        //获取content对象里面，数据的数量
+        var number_of_items = $('#content').children().size();
+        //计算页面显示的数量
+        var number_of_pages = Math.ceil(number_of_items/show_per_page);
+        //隐藏域默认值
+        $('#current_page').val(0);
+        $('#show_per_page').val(show_per_page);
+        // var navigation_html = '<a class="previous_link" href="javascript:previous();">上一页</a>';
+        // var current_link = 0;
+        // while(number_of_pages > current_link){
+        //     navigation_html += '<a hidden class="page_link" href="javascript:go_to_page(' + current_link +')" longdesc="' + current_link +'">'+ (current_link + 1) +'</a>';
+        //     current_link++;
+        // }
+        // navigation_html += '<a class="next_link" href="javascript:next();">下一页</a>';
+        // $('#page_navigation').html(navigation_html);
+        //add active_page class to the first page link
+        $('#page_navigation .page_link:first').addClass('active_page');
+        //隐藏该对象下面的所有子元素
+        $('#content').children().css('display', 'none');
+        //显示第n（show_per_page）元素
+        $('#content').children().slice(0, show_per_page).css('display', 'block');
+    }
     function next(){
         new_page = parseInt($('#current_page').val()) + 1;
         //if there is an item after the current active link run the function

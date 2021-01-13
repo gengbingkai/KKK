@@ -1,6 +1,6 @@
 .divss{
     width: 30%;
-    height: 500px;
+    height: 480px;
     float: left;
     margin-left: 2.5vw;
 }
@@ -26,17 +26,18 @@
     background: #002FA7;
 }
 .title_1{
+    width: 53vw;
     /* padding-left: 400px; */
     padding-top: 3vw;
     font-size: 3vw;
     font-weight: 400;
     color: #000000;
-    line-height: 82px;
+    line-height: 62px;
 }
 .datetime1{
     padding-top: 1.3vw;
     /* padding-left: 400px; */
-    font-size: 1vw;
+    /* font-size: 1vw; */
     font-weight: 400;
     color: #999999;
     line-height: 39px;
@@ -44,22 +45,22 @@
 .content1{
     width: 53vw;
     padding-top: 1vw;
-    font-size: 1vw;
+    /* font-size: 1vw; */
     font-family: Microsoft YaHei;
     color: #000000;
     line-height: 42px;
 }
 .content{
-    width: 58vw;
+    width: 53vw;
     padding-top: 1vw;
-    font-size: 1vw;
+    /* font-size: 1vw; */
     font-family: Microsoft YaHei;
     color: #000000;
     line-height: 2vw;
 }
 .iimage_new{
-    width: 58vw;
-    height: 35vw;
+    width: 53vw;
+    height: 34vw;
 }
 
 .nice li{
@@ -72,4 +73,12 @@
     font-family: Microsoft YaHei;
     color: #000000;
     line-height: 42px;
+}
+.butsss{
+    display: flex;align-items: center;justify-content: center;width: 216px;height: 50px;font-weight: bold;
+    
+border: 1px solid #000000;color: #000000;
+}
+.butsss:hover{
+    background: #000000;color: #FFFFFF;
 }
