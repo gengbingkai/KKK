@@ -72,6 +72,7 @@
     line-height: 42px;
 }
 .butsss{
+    cursor: pointer;
     display: flex;align-items: center;justify-content: center;width: 216px;height: 50px;font-weight: bold;
     
 border: 1px solid #000000;color: #000000;
