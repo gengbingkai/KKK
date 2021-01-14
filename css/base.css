@@ -42,10 +42,10 @@ nav ul li a {
     font-family:"微软雅黑";
 }
 
-#target_1:target, #target_2:target, #target_3:target, #target_4:target {
+/* #target_1:target, #target_2:target, #target_3:target, #target_4:target {
   display: block;
   float: right;     
-}
+} */
 
 nav ul ul {
 border-radius:0;
