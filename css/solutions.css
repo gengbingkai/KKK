@@ -2,24 +2,28 @@
 .Urban_Solutions{
     position: absolute;
     top: 37%;
-    left: 35%;
+    left: 50%;
     font-size: 3.3vw;
     font-family: Microsoft YaHei;
     font-weight: 400;
     color: #FFFFFF;
     line-height: 72px;
     z-index: 1;
+    width: 25%;text-align: center;
+    margin-left: -12.5%;
 }
 
 .Urban_Solutions_EN{
     position: absolute;
     top: 48%;
-    left: 35%;
+    left: 50%;
     font-size: 3vw;
     font-family: Microsoft YaHei;
     font-weight: 400;
     color: #FFFFFF;
     z-index: 1;
+    width: 25%;text-align: center;
+    margin-left: -12.5%;
 }
 
 .Urban_Solutions_but{
