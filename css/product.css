@@ -182,12 +182,12 @@
 
 .tiyan{
     width: 100%;
-    height: 25vw;
+    height: 20vw;
     background: #002FA7;
     opacity: 0.2;
 }
 .search_xcx{
-    font-size: 2.8vw;
+    font-size: 1.8vw;
     font-family: Microsoft YaHei;
     font-weight: 400;
     color: #000000;
@@ -200,8 +200,12 @@
     background: #EFF2F3;
 }
 .classs{position: relative; 
-    left: 30%;
-    top: 16vw;
+    left: 40%;
+    top: 13.5vw;
     z-index: 1;
 
+}
+.scanimg{
+    width: 6vw;
+    height: 6vw;
 }
